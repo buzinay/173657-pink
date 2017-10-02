@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+
+  background-color: @btn-green;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: @btn-lightgreen;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
