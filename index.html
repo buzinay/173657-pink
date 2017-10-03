@@ -2,53 +2,57 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header--index-page">
-      <div class="page-header__wrapper">
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="#" width="80" height="25" alt="Пинк" >
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__wrapper">
+        <h1 class="visually-hidden">Пинк-мобильное приложение</h1>
+      </div>
+      <section class="download">
+        <h2 class="visually-hidden">Приложение в магазинах мобильных приложений</h2>
+        <div class="download__wrapper">
+          <p class="download__slogan download__slogan--hidden">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="download__button button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link" href="https://www.apple.com/itunes/">Apple Store</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+            <li class="download__item">
+              <a class="download__link" href="https://play.google.com/store">Google Play </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <li class="download__item">
+              <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone" class="download__link">Windows Phone</a>
             </li>
           </ul>
-        </nav>
-        <section class="download">
-          <h2 class="visually-hidden">Приложение в магазинах мобильных приложений</h2>
-          <div class="download__wrapper">
-            <p class="download__slogan download__slogan--hidden">
-              Взгляните на жизнь иначе!
-            </p>
-            <a class="download__button button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link" href="https://www.apple.com/itunes/">Apple Store</a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="https://play.google.com/store">Google Play </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone" class="download__link">Windows Phone</a>
-              </li>
-            </ul>
-            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </section>
-      </div>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Пинк-мобильное приложение для загрузки и обмена фотографиями в сети</h1>
@@ -56,7 +60,7 @@
         <h2 class="visually-hidden">Информация о приложении</h2>
         <p class="information__slogan">Устали от серости мегаполиса?</p>
         <p class="information__slogan">Нам есть что вам предложить!</p>
-        <div class="information__container">
+        <div class="information__wrapper">
           <ul class="information__list">
             <li class="information__item information__item--mood">
               <h3 class="information__title">Поднимает настроение</h3>
@@ -168,16 +172,16 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__intro">Остались вопросы?</p>
-          <p class="contacts__intro">Свяжитесь с нами!</p>
+          <p class="information__slogan">Остались вопросы?</p>
+          <p class="information__slogan">Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните:</h3>
-              <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts__info contacts__info--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите:</h3>
-              <a class="contacts__info" href="mailto:">mail@htmlacademy.ru</a>
+              <a class="contacts__info contacts__info--link" href="mailto:">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>

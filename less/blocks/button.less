@@ -1,0 +1,56 @@
+.button {
+  display: block;
+
+  margin: 0 auto;
+  padding: 16px 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+  text-align: center;
+
+  border: 3px solid @white;
+  border-radius: 50px;
+}
+
+.button--download {
+  width: 234px;
+
+  &:hover,
+  &focus {
+    color: @text-red;
+
+    background-color: @white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+
+    background-color: @white;
+  }
+}
+
+.button--upload {
+  width: 280px;
+
+  margin-bottom: 12px;
+
+  color: @text-red;
+
+  background-color: @bg-grey;
+  border-color: @text-red;
+}
+
+.button--reset {
+  width: 280px;
+
+  margin-bottom: 12px;
+
+  color: @base-text-color;
+
+  background-color: @bg-grey;
+  border-color: @base-text-color;
+
+  opacity: 0.12;
+}
