@@ -17,6 +17,8 @@
 .button--download {
   width: 234px;
 
+  margin-bottom: 30px;
+
   &:hover,
   &focus {
     color: @text-red;
@@ -53,4 +55,18 @@
   border-color: @base-text-color;
 
   opacity: 0.12;
+}
+
+@media (min-width: @tablet-width) {
+  .button--download {
+    width: 254px;
+
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--download {
+    margin-bottom: 65px;
+  }
 }

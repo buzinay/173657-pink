@@ -1,0 +1,153 @@
+.price__wrapper {
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 45px;
+
+  background-color: @bg-grey;
+
+  overflow: hidden;
+}
+
+.price__table-wrapper {
+  margin-bottom: 40px;
+}
+
+.price__table {
+  width: 840px;
+
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border-collapse: collapse;
+}
+
+.price__cell,
+.price__title {
+  box-sizing: border-box;
+
+  width: 280px;
+
+  padding: 15px;
+  vertical-align: middle;
+
+  border: 2px solid @table-grey;
+}
+
+.price__cell {
+  background-color: @white;
+}
+
+.price__title {
+  padding: 20px 40px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: @white;
+
+  border-top: 0;
+  border-bottom: 0;
+
+  background-color: @base-text-color;
+}
+
+.price__title--hidden {
+  display: none;
+}
+
+.price__cell:first-of-type {
+  display: none;
+}
+
+.price__caption,
+.price__cost {
+  display: block;
+}
+
+.price__cost {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    padding-top: 86px;
+    padding-bottom: 70px;
+  }
+
+  .price__table-wrapper {
+    margin-bottom: 0;
+  }
+
+  .price__table {
+    width: 620px;
+  }
+
+  .price__title--hidden {
+    display: block;
+
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .price__cell:first-of-type {
+    display: table-cell;
+  }
+
+  .price__cell,
+  .price__title {
+    width: 25%;
+    padding: 8px 15px;
+  }
+
+  .price__title {
+    font-size: 16px;
+  }
+
+  .price__cost {
+    font-size: 18px;
+  }
+
+  .price__cell {
+    text-transform: none;
+  }
+
+  .price__param {
+    display: none;
+  }
+
+  .price__value {
+    display: block;
+    width: 28px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__wrapper {
+    padding-top: 150px;
+    padding-bottom: 96px;
+  }
+
+  .price__table {
+    width: 940px;
+  }
+
+  .price__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 18px;
+  }
+
+  .price__cost {
+    font-size: 24px;
+  }
+
+  .price__cell {
+    padding: 15px 23px;
+    font-size: 18px;
+  }
+}

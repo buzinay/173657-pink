@@ -1,19 +1,33 @@
 .page-header {
+  position: relative;
+
   color: white;
+
   background-color: @base-text-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 200px;
+  background-repeat: no-repeat;
 }
 
-.page-header__wrapper {
-  padding-top: 50px;
-  padding-bottom: 55px;
+.page-header__logo {
+  display: block;
+}
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+.page-header__logo-image {
+  width: 80px;
+  height: 25px;
+}
+
+.page-header--index-page {
+  min-height: 730px;
+  background-position: center bottom;
+  background-size: 1200px auto;
 }
 
 .page-header__title {
   margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
 
   width: 250px;
 
@@ -23,5 +37,50 @@
 }
 
 .page-header__logo-wrapper {
-  background-color: rgba(0, 0, 0, 0.3);
+  .container();
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  min-height: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    width: 490px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-size: cover;
+  }
+  .page-header__wrapper {
+    .container();
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo-wrapper {
+    width: 150px;
+    margin: 0;
+  }
+
+  .page-header__logo {
+    position: static;
+  }
 }
