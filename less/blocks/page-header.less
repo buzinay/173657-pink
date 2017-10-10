@@ -10,7 +10,12 @@
 }
 
 .page-header__logo {
+  position: absolute;
+  left: 20px;
+  top: 22px;
   display: block;
+
+  min-height: 25px;
 }
 
 .page-header__logo-image {
@@ -40,13 +45,6 @@
   .container();
 }
 
-.page-header__logo {
-  position: absolute;
-  left: 20px;
-  top: 22px;
-  min-height: 25px;
-}
-
 @media (min-width: @tablet-width) {
   .page-header__title {
     padding-top: 80px;
@@ -57,13 +55,13 @@
     font-size: 50px;
     line-height: 60px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     background-size: cover;
   }
+
   .page-header__wrapper {
     .container();
     padding-top: 25px;
