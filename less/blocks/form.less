@@ -5,8 +5,8 @@
 .form__fieldset {
   position: relative;
 
-  width: 280px;
-  margin: 0 auto;
+  /*width: 280px;*/
+  margin: 0;
   padding: 40px 20px;
 
   border: 0;
@@ -15,14 +15,11 @@
 .form__fieldset--check-group,
 .form__fieldset--radio-group {
   padding-top: 120px;
+  background-color: @bg-grey;
 }
 
 .form__fieldset--message {
   padding-top: 74px;
-}
-
-.form__fieldset-wrapper {
-  background-color: @bg-grey;
 }
 
 .form__fieldset--user-contacts .form__legend {
@@ -43,14 +40,15 @@
 }
 
 .form__fieldset--check-group .form__legend {
-  width: 220px;
+  /*width: 220px;*/
 }
 
 .form__fieldset--message .form__legend {
-  width: 280px;
+  /*width: 280px;*/
 }
 
 .form__label {
+  padding-left: 22px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -65,9 +63,7 @@
 .form__field,
 .form__textarea {
   box-sizing: border-box;
-
-  width: 280px;
-
+  width: 100%;
   padding: 16px 20px;
 
   font-size: 18px;
@@ -123,15 +119,22 @@
   .form {
     display: flex;
     flex-direction: column;
+    .container();
   }
 
   .form__fieldset {
     box-sizing: border-box;
-    width: 620px;
+    width: 100%;
+
     margin-bottom: 60px;
     padding: 45px 60px;
 
     border: 2px solid @table-grey;
+  }
+
+  .form__fieldset--check-group,
+  .form__fieldset--radio-group {
+    background-color: @white;
   }
 
   .form__fieldset--user-info {
@@ -151,36 +154,27 @@
     display: block;
   }
 
-  .form__fieldset--check-group .form__legend,
+  /*.form__fieldset--check-group .form__legend,
   .form__fieldset--message .form__legend {
     width: auto;
-  }
+  }*/
 
   .form__fieldset--user-info .form__row {
     display: flex;
     align-items: center;
-    width: 100%;
 
     margin-bottom: 50px;
-  }
-
-  .form__field {
-    flex-grow: 1;
   }
 
   .form__label--input {
     margin-right: 20px;
   }
 
-  .form__fieldset-wrapper {
-    background-color: @white;
-  }
-
-  .form__fieldset-wrapper--radio-group {
+  .form__fieldset--radio-group {
     order: 2;
   }
 
-  .form__fieldset-wrapper--check-group {
+  .form__fieldset--check-group {
     order: 4;
   }
 
@@ -215,13 +209,12 @@
     margin-bottom: 14px;
   }
 
-  .form__fieldset--user-contacts .form__label {
-    margin-bottom: 35px;
-    padding-left: 20px;
+  .form__fieldset--user-info .form__label {
+    padding-left: 0;
   }
 
-  .form__textarea {
-    width: 100%;
+  .form__fieldset--user-contacts .form__label {
+    margin-bottom: 35px;
   }
 
   .form__button {
@@ -234,11 +227,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    .container();
-  }
-
-  .form__fieldset {
-    width: 940px;
   }
 
   .form__fieldset--user-info {
@@ -267,7 +255,7 @@
   }
 
   .form__fieldset--check-group .form__row {
-    width: 236px;
+    width: 250px;
   }
 
   .form__fieldset--check-group .form__row:nth-child(2) {

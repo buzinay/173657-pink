@@ -11,26 +11,28 @@
       <div class="page-header__wrapper">
         <div class="page-header__nav">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
+            <a class="page-header__logo" href="index.html">
               <img class="page-header__logo-image" src="#" width="80" height="25" alt="Пинк" >
             </a>
           </div>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link">Фотографии</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link">Фотографии</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
         <h1 class="page-header__title">Фотографии пользователей</h1>
@@ -40,9 +42,9 @@
       <section class="foto-gallery">
         <h2 class="visually-hidden">Галлерея фотографий пользователей</h2>
         <p class="foto-gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="foto-gallery__item user-foto user-foto--panoramic">
+        <div class="foto-gallery__item foto-gallery__item--panoramic user-foto user-foto--panoramic">
           <a href="#" class="user-foto__link">
-            <img class="user-foto__image" src="http://placehold.it/150x100" alt="Панорама дня">
+            <img class="user-foto__image" src="../img/panorama-mobile@1x.jpg" alt="Панорама дня">
           </a>
           <div class="user-foto__caption user-foto__caption--panoramic">
             <p class="user-foto__author">
@@ -60,7 +62,7 @@
         <ul class="foto-gallery__wrapper">
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="Фото 1">
+              <img class="user-foto__image" src="../img/photo-car-mobile@1x.jpg" alt="Фото 1">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -77,7 +79,7 @@
           </li>
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="Фото 2">
+              <img class="user-foto__image" src="../img/photo-drumset-mobile@1x.jpg" alt="Фото 2">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -94,7 +96,7 @@
           </li>
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="Фото 3">
+              <img class="user-foto__image" src="../img/photo-window-mobile@1x.jpg" alt="Фото 3">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -111,7 +113,7 @@
           </li>
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="Фото 4">
+              <img class="user-foto__image" src="../img/photo-fair-mobile@1x.jpg" alt="Фото 4">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -128,7 +130,7 @@
           </li>
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="">
+              <img class="user-foto__image" src="../img/photo-pov-mobile@1x.jpg" alt="">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -145,7 +147,7 @@
           </li>
           <li class="foto-gallery__item user-foto">
             <a href="#" class="user-foto__link">
-              <img class="user-foto__image" src="http://placehold.it/150x100" alt="Фото 5">
+              <img class="user-foto__image" src="../img/photo-wing-mobile@1x.jpg" alt="Фото 5">
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
@@ -165,47 +167,48 @@
       </section>
       <section class="foto-upload">
         <h2 class="visually-hidden">Загрузить свой снимок</h2>
-        <div class="foto-upload__wrapper">
-          <form class="foto-upload__form form-upload" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-upload__wrapper">
-              <div class="form-upload__part form-upload__part--image">
-                <img class="form-upload__image" src="http://placehold.it/150x100" alt="Фото 6">
-              </div>
-              <div class="form-upload__part form-upload__part--load">
-                <ul class="form-upload__settings settings">
-                  <li class="settings__item settings__item--active">
-                    <button class="settings__button settings__button--crop" type="button">Обрезка</button>
-                    <div class="settings__range range">
-                      <div class="range__line">
-                        <div class="range__toggle"></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="settings__item">
-                    <button class="settings__button settings__button--fill" type="button">Заливка</button>
-                    <div class="settings__range range">
-                      <div class="range__line">
-                        <div class="range__toggle"></div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="settings__item settings__item--active">
-                    <button class="settings__button settings__button--contrast" type="button">Контраст</button>
-                    <div class="settings__range range">
-                      <div class="range__line">
-                        <div class="range__toggle"></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="form-upload__buttons">
-                  <button class="button button--upload" type="submit">Запосить</button>
-                  <button class="button button--reset" type="reset">Отмена</button>
+        <form class="foto-upload__form form-upload" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form-upload__part form-upload__part--image">
+              <img class="form-upload__image" src="../img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            </div>
+            <div class="form-upload__part form-upload__part--load">
+            <ul class="form-upload__settings settings">
+              <li class="settings__item settings__item--active">
+                <button class="settings__button settings__button--crop" type="button">Обрезка</button>
+                <div class="settings__range range">
+                  <div class="range__line">
+                    <div class="range__toggle"></div>
+                  </div>
                 </div>
+              </li>
+              <li class="settings__item">
+                <button class="settings__button settings__button--fill" type="button">Заливка</button>
+                <div class="settings__range range">
+                  <div class="range__line">
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="settings__item settings__item--active">
+                <button class="settings__button settings__button--contrast" type="button">Контраст</button>
+                <div class="settings__range range">
+                  <div class="range__line">
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="range range--self">
+              <div class="range__line">
+                <div class="range__toggle"></div>
               </div>
             </div>
-          </form>
-        </div>
+            <div class="form-upload__buttons">
+              <button class="button button--upload" type="submit">Запосить</button>
+              <button class="button button--reset" type="reset">Отмена</button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -231,5 +234,21 @@
         </p>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

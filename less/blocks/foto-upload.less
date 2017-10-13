@@ -1,5 +1,17 @@
-.foto-upload__wrapper {
-  padding: 20px;
+.foto-upload {
+  padding-top: 20px;
 
   background-color: @bg-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .foto-upload {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .foto-upload {
+    .container();
+  }
 }

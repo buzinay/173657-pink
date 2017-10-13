@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 
   &:hover,
-  &focus {
+  &:focus {
     color: @text-red;
 
     background-color: @white;
@@ -42,12 +42,21 @@
 
   background-color: @bg-grey;
   border-color: @text-red;
+
+  &:hover,
+  &:focus {
+    color: @white;
+
+    background-color: @text-red;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--reset {
   width: 280px;
-
-  margin-bottom: 12px;
 
   color: @base-text-color;
 
@@ -55,18 +64,44 @@
   border-color: @base-text-color;
 
   opacity: 0.12;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: @bg-grey;
+    background-color: @base-text-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .button--download {
+  .button {
     width: 254px;
+  }
 
+  .button--download {
     margin-bottom: 45px;
+  }
+
+  .button--upload {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .button--upload,
+  .button--reset {
+    width: 180px;
+    margin: 0;
+  }
+
   .button--download {
     margin-bottom: 65px;
+  }
+
+  .button--upload {
+    margin-bottom: 0;
   }
 }

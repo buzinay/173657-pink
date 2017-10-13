@@ -1,18 +1,11 @@
 .information {
-  background-color: @bg-grey;
-}
-
-.information__wrapper {
-  .container();
   padding-top: 40px;
-  padding-bottom: 277px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 110%;
 }
 
 .information__slogan {
-  margin: 0;
+  width: 210px;
+
+  margin: 0 auto;
   margin-bottom: 35px;
 
   font-weight: 300;
@@ -20,17 +13,26 @@
   text-align: center;
 }
 
+.information__list-wrapper {
+  background-color: @bg-grey;
+}
+
 .information__list {
-  margin: 0;
+  .container();
   padding: 0;
+  padding-top: 80px;
+  padding-bottom: 277px;
 
   text-align: center;
-
   list-style: none;
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 110%;
 }
 
 .information__item {
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 .information__title {
@@ -45,7 +47,6 @@
 
 .information__description {
   margin: 0;
-  margin-bottom: 35px;
 
   font-size: 14px;
   line-height: 24px;
@@ -53,16 +54,12 @@
 
 @media (min-width: @tablet-width) {
   .information {
+    padding-top: 55px;
     background-color: @white;
   }
 
-  .information__wrapper {
-    padding-top: 55px;
-    padding-bottom: 0;
-    background-image: none;
-  }
-
   .information__slogan {
+    width: auto;
     margin-bottom: 0;
 
     font-size: 40px;
@@ -83,23 +80,23 @@
   }
 
   .information__list-wrapper {
-    display: flex;
-    justify-content: flex-end;
-
     padding-top: 70px;
+  }
 
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat;
+  .information__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    text-align: left;
+
     background-position: left 30px;
     background-size: 270px 540px;
   }
 
-  .information__list {
+  .information__item {
     width: 310px;
-
-    text-align: left;
-
-    background-color: @bg-grey;
+    margin-left: auto;
   }
 }
 
@@ -123,15 +120,16 @@
   }
 
   .information__list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
-    width: 100%;
+    background-image: none;
   }
 
   .information__item {
     width: 240px;
     padding-top: 300px;
+    padding-left: 0;
 
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;

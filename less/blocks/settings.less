@@ -1,6 +1,48 @@
 .settings {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
+}
+
+.settings__button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  font-size: 0;
+
+  border: 0;
+
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .settings {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .settings__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @table-grey;
+  }
+
+  .settings__button {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .settings__button {
+    width: 50px;
+    height: 50px;
+  }
 }
