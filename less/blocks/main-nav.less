@@ -81,23 +81,9 @@
   }
 }
 
-.main-nav__wrapper {
-  position: absolute;
-  top: 66px;
-  right: 0;
-  left: 0;
-  z-index: 10;
-
-  background-color: @base-text-color;
-}
-
 @media (min-width: @tablet-width) {
   .main-nav {
     padding-top: 110px;
-  }
-
-  .main-nav__wrapper {
-    top: 110px;
   }
 }
 
@@ -110,11 +96,6 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    min-height: 0;
-  }
-
   .main-nav--nojs .site-list__item {
     display: block;
   }
@@ -124,11 +105,6 @@
   .main-nav {
     padding-top: 0;
 
-    background-color: transparent;
-  }
-
-  .main-nav__wrapper {
-    position: static;
     background-color: transparent;
   }
 
