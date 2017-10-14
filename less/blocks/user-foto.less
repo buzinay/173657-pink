@@ -65,9 +65,37 @@
     padding: 25px 30px;
   }
 
+  .user-foto__caption--panoramic {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: auto;
+  }
+
   .user-foto__like {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: auto;
+  }
+
+  .user-foto--panoramic .user-foto__author {
+    order: 1;
+  }
+
+  .user-foto--panoramic .user-foto__like {
+    justify-content: flex-start;
+    order: 2;
+    margin-top: 0;
+  }
+
+  .user-foto--panoramic .user-foto__message {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-foto__image {
+    height: 400px;
   }
 }
