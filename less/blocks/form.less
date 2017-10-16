@@ -18,6 +18,89 @@
   background-color: @bg-grey;
 }
 
+.form__checkbox,
+.form__radio {
+  .visually-hidden();
+}
+
+.form__checkbox + .form__label,
+.form__radio + .form__label {
+  position: relative;
+  padding-left: 70px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+
+    display: block;
+    width: 38px;
+    height: 38px;
+
+    background-color: @white;
+    border: 2px solid @table-grey;
+  }
+
+  &:hover::before {
+    border-color: @base-text-color;
+  }
+
+  &:active::before {
+    border-color: @text-red;
+  }
+}
+
+.form__checkbox:focus + .form__label,
+.form__radio:focus + .form__label {
+  &::before {
+    border-color: @base-text-color;
+  }
+}
+
+.form__radio + .form__label {
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.form__radio:checked + .form__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    background-color: @text-red;
+    border-radius: 50%;
+  }
+}
+
+.form__checkbox:checked + .form__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: -25%;
+
+    width: 12px;
+    height: 23px;
+
+    border: 2px solid @text-red;
+    border-top: 0;
+    border-left: 0;
+
+    transform: rotate(45deg);
+  }
+}
+
 .form__fieldset--message {
   padding-top: 74px;
 }
@@ -28,6 +111,16 @@
 
 .form__row {
   margin-bottom: 25px;
+}
+
+.form__fieldset--radio-group .form__row,
+.form__fieldset--check-group .form__row {
+  margin-bottom: 50px;
+}
+
+.form__fieldset--radio-group .form__row:last-child,
+.form__fieldset--check-group .form__row:last-child {
+  margin-bottom: 0;
 }
 
 .form__legend {
@@ -236,7 +329,6 @@
 
   .form__fieldset--radio-group {
     width: 435px;
-    min-height: 300px;
   }
 
   .form__fieldset--user-contacts .form__row-inner {
@@ -248,11 +340,19 @@
     width: 375px;
   }
 
+  .form__fieldset--check-group {
+    padding-bottom: 10px;
+  }
+
   .form__fieldset--check-group .form__row-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .form__fieldset--radio-group .form__row {
+    margin-bottom: 38px;
+}
 
   .form__fieldset--check-group .form__row {
     width: 250px;
@@ -280,5 +380,9 @@
 
   .form__row--submit-group {
     width: 100%;
+  }
+
+  .form__row {
+    margin-bottom: 50px;
   }
 }
