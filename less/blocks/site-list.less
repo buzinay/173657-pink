@@ -20,18 +20,54 @@
 
 .site-list__link {
   display: block;
-
   padding: 18px 15px;
 
   color: @white;
+}
 
+.site-list__link[href] {
   &:hover,
   &:focus {
     color: @text-red;
   }
 
   &:active {
-    color: @white;
+    /*color: @white;*/
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 625px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__link--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 15px;
+      right: 15px;
+
+      display: block;
+      width: auto;
+      height: 2px;
+
+      background-color: @white;
+    }
   }
 }

@@ -1,0 +1,58 @@
+.form-upload__image {
+  .container();
+}
+
+.form-upload__part--image {
+  margin-bottom: 42px;
+}
+
+.form-upload__buttons {
+  padding: 40px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-upload {
+    display: flex;
+    justify-content: space-between;
+    .container();
+  }
+
+  .form-upload__part--image {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .form-upload__image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-upload__part--load {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+
+  .form-upload__buttons {
+    margin-top: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-upload {
+    width: 800px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .form-upload__part--load {
+    width: 410px;
+  }
+
+  .form-upload__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}

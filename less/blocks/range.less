@@ -1,0 +1,60 @@
+.range {
+  display: none;
+  padding: 35px 0;
+}
+
+.range--self {
+  display: block;
+  border-bottom: 1px solid @table-grey;
+}
+
+.range__line {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+
+  background-color: @black;
+}
+
+.range__toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80%;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: @bg-grey;
+  border: 2px solid @text-red;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: @text-red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range {
+    display: block;
+  }
+
+  .range--self {
+    display: none;
+  }
+
+  .range__line {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range__line {
+    width: 290px;
+  }
+}

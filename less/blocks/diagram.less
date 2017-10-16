@@ -1,0 +1,90 @@
+.diagram--hidden {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .diagram--hidden {
+    display: block;
+  }
+
+  .diagram__wrapper {
+    display: flex;
+
+    .container();
+    padding-top: 100px;
+  }
+
+  .diagram__content {
+    width: 290px;
+
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .diagram__slogan {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: @black;
+  }
+
+  .diagram__text {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .diagram__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @text-red;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .diagram {
+    background-color: @bg-grey;
+  }
+
+  .diagram__wrapper {
+    padding-bottom: 110px;
+  }
+
+  .diagram__content {
+    width: 530px;
+    margin-right: 50px;
+  }
+
+  .diagram__slogan {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .diagram__slogan br {
+    display: none;
+  }
+
+  .diagram__text {
+    margin-bottom: 30px;
+  }
+
+  .diagram__text,
+  .diagram__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

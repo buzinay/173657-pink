@@ -1,11 +1,19 @@
-.feedback__wrapper {
-  .container();
-
-  padding: 50px 0;
-}
-
 .feedback__intro {
-  margin: 0;
+  .container();
+  padding: 50px 0 0;
 
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    margin-bottom: 40px;
+  }
+
+  .feedback__intro {
+    width: 500px;
+    padding-bottom: 70px;
+
+    font-size: 18px;
+  }
 }

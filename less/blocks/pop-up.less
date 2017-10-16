@@ -1,5 +1,10 @@
 .pop-up {
+  max-width: 460px;
+  margin: 0 auto;
+
   text-align: center;
+
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 }
 
 .pop-up__wrapper {
@@ -30,6 +35,30 @@
   padding: 50px 0;
 
   background-color: @bg-grey;
+}
 
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+@media (min-width: @tablet-width) {
+  .pop-up__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__message {
+    padding: 0 70px;
+    font-size: 18px;
+  }
+
+  .pop-up__message br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pop-up--success {
+    max-width: 780px;
+  }
+
+  .pop-up--success .pop-up__message {
+    padding: 0 200px;
+  }
 }
