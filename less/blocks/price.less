@@ -10,6 +10,8 @@
 
 .price__table-wrapper {
   margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: 50%;
 }
 
 .price__table {
@@ -22,15 +24,17 @@
   text-transform: uppercase;
 
   border-collapse: collapse;
+
+  transform: translateX(-50%);
 }
 
 .price__cell,
 .price__title {
   box-sizing: border-box;
 
-  width: 280px;
+  width: 278px;
 
-  padding: 15px;
+  padding: 14px;
   vertical-align: middle;
 
   border: 2px solid @table-grey;
@@ -41,7 +45,7 @@
 }
 
 .price__title {
-  padding: 20px 40px;
+  padding: 16px 40px 22px;
 
   font-size: 18px;
   line-height: 30px;
@@ -147,7 +151,7 @@
   }
 
   .price__cell {
-    padding: 15px 23px;
+    padding: 14px 23px;
     font-size: 18px;
   }
 }

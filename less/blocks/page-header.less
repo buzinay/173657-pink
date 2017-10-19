@@ -37,8 +37,8 @@
 
 .page-header__title {
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 26px;
+  padding-bottom: 52px;
 
   width: 250px;
 
@@ -47,19 +47,31 @@
   text-align: center;
 }
 
+.page-header__title--foto-page {
+  padding-bottom: 82px;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     background-size: 1200px;
   }
 
+  .page-header--index-page {
+    min-height: 985px;
+  }
+
   .page-header__title {
-    padding-top: 80px;
+    padding-top: 68px;
     padding-bottom: 80px;
 
     width: 490px;
 
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-header__title--foto-page {
+    padding-bottom: 139px;
   }
 }
 
@@ -68,20 +80,37 @@
     background-size: cover;
   }
 
+  .page-header--index-page {
+    min-height: 853px;
+  }
+
   .page-header__nav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__nav-wrapper {
-    .container();
+    /*.container();*/
     display: flex;
     justify-content: space-between;
+
+    width: 940px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
     position: static;
     width: 150px;
+  }
+
+  .page-header__title {
+    width: 830px;
+    padding-top: 65px;
+    padding-bottom: 100px;
+  }
+
+  .page-header__title--foto-page {
+    width: 400px;
   }
 }

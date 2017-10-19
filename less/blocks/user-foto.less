@@ -3,13 +3,13 @@
   line-height: 0;
 }
 
-.user-foto__image {
+.user-foto__image--panoramic {
   width: 100%;
-  height: auto;
+  height: 135px;
 }
 
 .user-foto__caption {
-  padding: 25px 16px;
+  padding: 20px 16px;
 
   font-size: 14px;
   line-height: 24px;
@@ -20,7 +20,8 @@
 .user-foto__caption--panoramic {
   margin-left: 20px;
   margin-right: 20px;
-  padding: 0 20px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   background-color: @bg-grey;
 }
@@ -33,6 +34,7 @@
 
 .user-foto__message {
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .user-foto__time {
@@ -54,7 +56,7 @@
 
   .user-foto--panoramic .user-foto__image {
     width: 100%;
-    height: auto;
+    height: 510px;
   }
 
   .user-foto__caption {
@@ -70,6 +72,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: auto;
+
+    padding: 25px 28px 16px;
   }
 
   .user-foto__like {
@@ -97,5 +101,13 @@
 @media (min-width: @desktop-width) {
   .user-foto__image {
     height: 400px;
+  }
+
+  .user-foto--panoramic .user-foto__image {
+    height: 508px;
+  }
+
+  .user-foto__message {
+    margin-bottom: 5px;
   }
 }
