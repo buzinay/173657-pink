@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Пинк - фото</title>
   </head>
@@ -16,7 +16,7 @@
                 <img class="page-header__logo-image" src="#" width="80" height="25" alt="Пинк" >
               </a>
             </div>
-            <nav class="main-nav main-nav--closed main-nav--nojs">
+            <nav class="main-nav main-nav--opened">
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
@@ -35,7 +35,7 @@
             </nav>
           </div>
         </div>
-        <h1 class="page-header__title">Фотографии пользователей</h1>
+        <h1 class="page-header__title page-header__title--foto-page">Фотографии пользователей</h1>
       </div>
     </header>
     <main>
@@ -44,7 +44,7 @@
         <p class="foto-gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="foto-gallery__item foto-gallery__item--panoramic user-foto user-foto--panoramic">
           <a href="#" class="user-foto__link">
-            <img class="user-foto__image" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+            <img class="user-foto__image user-foto__image--panoramic" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
           </a>
           <div class="user-foto__caption user-foto__caption--panoramic">
             <p class="user-foto__author">
@@ -163,7 +163,7 @@
             </div>
           </li>
         </ul>
-        <p class="foto-gallery__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="foto-gallery__slogan foto-gallery__slogan--self">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="foto-upload">
         <h2 class="visually-hidden">Загрузить свой снимок</h2>
@@ -177,7 +177,7 @@
                 <button class="settings__button settings__button--crop" type="button">Обрезка</button>
                 <div class="settings__range range">
                   <div class="range__line">
-                    <div class="range__toggle"></div>
+                    <div class="range__toggle range__toggle--crop"></div>
                   </div>
                 </div>
               </li>
@@ -185,7 +185,7 @@
                 <button class="settings__button settings__button--fill" type="button">Заливка</button>
                 <div class="settings__range range">
                   <div class="range__line">
-                    <div class="range__toggle"></div>
+                    <div class="range__toggle range__toggle--fill"></div>
                   </div>
                 </div>
               </li>
@@ -193,7 +193,7 @@
                 <button class="settings__button settings__button--contrast" type="button">Контраст</button>
                 <div class="settings__range range">
                   <div class="range__line">
-                    <div class="range__toggle"></div>
+                    <div class="range__toggle range__toggle--contrast"></div>
                   </div>
                 </div>
               </li>
@@ -212,7 +212,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper page-footer__wrapper--foto-page">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="#" width="80" height="25" alt="Пинк">
         </a>
@@ -227,13 +227,13 @@
             <a class="social__link social__link--youtube" href="#">Youtube</a>
           </li>
         </ul>
-        <p class="footer__copyright copyright">Разработано
+        <p class="page-footer__copyright copyright">Разработано
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="copyright__logo" src="#" width="40" height="50" alt="HTMLAcademy">
           </a>
         </p>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

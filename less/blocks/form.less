@@ -7,7 +7,7 @@
 
   /*width: 280px;*/
   margin: 0;
-  padding: 40px 20px;
+  padding: 35px 25px 20px;
 
   border: 0;
 }
@@ -15,6 +15,7 @@
 .form__fieldset--check-group,
 .form__fieldset--radio-group {
   padding-top: 120px;
+  padding-bottom: 40px;
   background-color: @bg-grey;
 }
 
@@ -33,12 +34,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
+    top: -8px;
     left: 0;
 
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
 
     background-color: @white;
     border: 2px solid @table-grey;
@@ -70,7 +71,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 13px;
+    left: 12px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -87,11 +88,11 @@
   &::after {
     content: "";
     position: absolute;
-    left: 15px;
-    top: -25%;
+    left: 16px;
+    top: -20%;
 
-    width: 12px;
-    height: 23px;
+    width: 10px;
+    height: 20px;
 
     border: 2px solid @text-red;
     border-top: 0;
@@ -110,17 +111,25 @@
 }
 
 .form__row {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.form__fieldset--radio-group .form__row,
 .form__fieldset--check-group .form__row {
   margin-bottom: 50px;
+}
+
+.form__fieldset--radio-group .form__row {
+  margin-bottom: 42px;
 }
 
 .form__fieldset--radio-group .form__row:last-child,
 .form__fieldset--check-group .form__row:last-child {
   margin-bottom: 0;
+}
+
+.form__row--submit-group {
+  margin: 0;
+  margin-top: 30px;
 }
 
 .form__legend {
@@ -141,13 +150,16 @@
 }
 
 .form__label {
-  padding-left: 22px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 30px;
 }
 
 .form__legend,
 .form__label--input {
+  display: block;
+  margin-bottom: 4px;
+
   font-size: 14px;
   color: @text-red;
   text-transform: uppercase;
@@ -157,7 +169,7 @@
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 16px 20px;
+  padding: 14px 18px;
 
   font-size: 18px;
   line-height: 30px;
@@ -178,6 +190,10 @@
   &:active {
     border-color: @text-red;
   }
+}
+
+.form__textarea {
+  min-height: 202px;
 }
 
 .form__field::-webkit-input-placeholder {
@@ -204,23 +220,30 @@
 .form__note {
   display: block;
 
+  font-size: 100%;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form__note span {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .form {
     display: flex;
     flex-direction: column;
-    .container();
+    /*.container();*/
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__fieldset {
     box-sizing: border-box;
     width: 100%;
 
-    margin-bottom: 60px;
-    padding: 45px 60px;
+    margin-bottom: 58px;
+    padding: 60px;
 
     border: 2px solid @table-grey;
   }
@@ -230,16 +253,42 @@
     background-color: @white;
   }
 
+  .form__row-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__row-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form__fieldset--radio-group .form__row-inner {
+    min-height: 180px;
+  }
+
+  .form__fieldset--check-group .form__row-inner {
+    min-height: 440px;
+  }
+
+  .form__fieldset--check-group .form__row {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+  }
+
   .form__fieldset--user-info {
     order: 1;
 
     margin-bottom: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     border: 0;
   }
 
   .form__fieldset--user-contacts {
     order: 3;
+    padding-top: 48px;
     padding-bottom: 0;
   }
 
@@ -256,11 +305,15 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+  }
+
+  .form__fieldset--user-info .form__row:last-child {
+    margin-bottom: 0;
   }
 
   .form__label--input {
-    margin-right: 20px;
+    padding-left: 18px;
   }
 
   .form__fieldset--radio-group {
@@ -269,11 +322,18 @@
 
   .form__fieldset--check-group {
     order: 4;
+    padding-bottom: 55px;
   }
 
   .form__fieldset--message {
     order: 5;
     margin-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__textarea {
+    min-height: 190px;
   }
 
   .form__row--submit-group {
@@ -288,7 +348,13 @@
 
   .form__legend {
     position: static;
+    margin-bottom: -14px;
     padding: 0 30px;
+  }
+
+  .form__checkbox + .form__label,
+  .form__radio + .form__label {
+    padding-left: 60px;
   }
 
   .form__fieldset--user-contacts .form__row {
@@ -299,15 +365,16 @@
 
   .form__fieldset--user-contacts .form__field {
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .form__fieldset--user-info .form__label {
+    margin-right: 20px;
     padding-left: 0;
   }
 
   .form__fieldset--user-contacts .form__label {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   .form__button {
@@ -319,20 +386,30 @@
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-content: stretch;
+
+    width: 940px;
+    margin: 0 auto;
   }
 
   .form__fieldset--user-info {
     width: 435px;
-    margin-right: 70px;
+    padding-top: 15px;
   }
 
   .form__fieldset--radio-group {
     width: 435px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .form__fieldset--user-contacts {
+    padding-bottom: 12px;
   }
 
   .form__fieldset--user-contacts .form__row-inner {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -340,22 +417,31 @@
     width: 375px;
   }
 
+  .form__fieldset--user-contacts .form__label {
+    margin-bottom: 0;
+  }
+
   .form__fieldset--check-group {
     padding-bottom: 10px;
   }
 
   .form__fieldset--check-group .form__row-inner {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 163px;
+  }
+
+  .form__fieldset--radio-group .form__row-inner {
+    align-items: center;
   }
 
   .form__fieldset--radio-group .form__row {
-    margin-bottom: 38px;
+    width: 280px;
   }
 
   .form__fieldset--check-group .form__row {
-    width: 250px;
+    flex-basis: 205px;
   }
 
   .form__fieldset--check-group .form__row:nth-child(2) {
@@ -382,7 +468,16 @@
     width: 100%;
   }
 
-  .form__row {
-    margin-bottom: 50px;
+  .form__textarea {
+    min-height: 125px;
+  }
+
+  .form__fieldset--message {
+    margin-bottom: 65px;
+    padding-bottom: 45px;
+  }
+
+  .form__note span {
+    display: inline;
   }
 }

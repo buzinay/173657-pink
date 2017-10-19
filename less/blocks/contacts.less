@@ -1,6 +1,6 @@
 .contacts__wrapper {
   .container();
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 .contacts__list {
@@ -12,7 +12,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .contacts__title {
@@ -56,7 +56,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
-    padding-top: 55px;
+    padding-top: 42px;
   }
 
   .contacts__list {
@@ -67,7 +67,12 @@
 
   .contacts__item {
     width: 310px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__item--adress {
+    width: 280px;
+    margin-bottom: 30px;
   }
 
   .contacts__map {
@@ -76,16 +81,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    padding-top: 63px;
+    padding-bottom: 20px;
+  }
+
   .contacts__list {
     justify-content: space-between;
   }
 
   .contacts__title {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .contacts__item--phone {
     order: 1;
+  }
+
+  .contacts__item {
+    margin-bottom: 0;
   }
 
   .contacts__item--adress {

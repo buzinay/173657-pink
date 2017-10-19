@@ -3,10 +3,10 @@
 }
 
 .information__slogan {
-  width: 210px;
+  width: 230px;
 
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   font-weight: 300;
   font-size: 24px;
@@ -20,24 +20,24 @@
 .information__list {
   .container();
   padding: 0;
-  padding-top: 80px;
-  padding-bottom: 277px;
+  padding-top: 88px;
+  padding-bottom: 288px;
 
   text-align: center;
   list-style: none;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 110%;
+  background-position: center 109%;
 }
 
 .information__item {
-  padding-bottom: 35px;
+  padding-bottom: 31px;
 }
 
 .information__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 18px;
@@ -54,7 +54,7 @@
 
 @media (min-width: @tablet-width) {
   .information {
-    padding-top: 55px;
+    padding-top: 47px;
     background-color: @white;
   }
 
@@ -76,31 +76,37 @@
   .information__slogan--self {
     width: 390px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .information__list-wrapper {
-    padding-top: 70px;
+    padding-top: 0;
   }
 
   .information__list {
     display: flex;
     flex-direction: column;
+    padding-top: 78px;
     padding-bottom: 0;
 
     text-align: left;
 
-    background-position: left 30px;
+    background-position: left 10px;
     background-size: 270px 540px;
   }
 
   .information__item {
     width: 310px;
     margin-left: auto;
+    padding-bottom: 36px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .information {
+    padding-top: 66px;
+  }
+
   .information__slogan {
     font-size: 50px;
     line-height: 60px;
@@ -112,7 +118,7 @@
 
   .information__slogan--self {
     width: 500px;
-    margin-bottom: 70px;
+    margin-bottom: 53px;
   }
 
   .information__list-wrapper {
@@ -122,12 +128,14 @@
   .information__list {
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 35px;
 
     background-image: none;
   }
 
   .information__item {
     width: 240px;
+    margin-left: 0;
     padding-top: 300px;
     padding-left: 0;
 
@@ -138,8 +146,8 @@
   }
 
   .information__title {
-    padding-top: 60px;
-    margin-bottom: 35px;
+    padding-top: 55px;
+    margin-bottom: 25px;
 
     font-size: 30px;
     line-height: 30px;

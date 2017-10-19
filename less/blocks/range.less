@@ -1,6 +1,6 @@
 .range {
   display: none;
-  padding: 35px 0;
+  padding: 34px 0;
 }
 
 .range--self {
@@ -48,13 +48,39 @@
 
   .range__line {
     width: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .range__toggle--crop {
+    left: 74%;
+  }
+
+  .range__toggle--fill {
+    left: 13%;
+  }
+
+  .range__toggle--contrast {
+    left: 49%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .range__line {
     width: 290px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .range__toggle--crop {
+    left: 25%;
+  }
+
+  .range__toggle--fill {
+    left: 85%;
+  }
+
+  .range__toggle--contrast {
+    left: 55%;
   }
 }

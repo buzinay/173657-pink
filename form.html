@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Пинк - конкурс</title>
   </head>
@@ -16,7 +16,7 @@
                 <img class="page-header__logo-image" src="#" width="80" height="25" alt="Пинк" >
               </a>
             </div>
-            <nav class="main-nav main-nav--closed main-nav--nojs">
+            <nav class="main-nav main-nav--opened">
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
@@ -41,7 +41,7 @@
     <main>
       <section class="feedback">
         <h2 class="visually-hidden">Форма обратной связи для участия в конкурсе</h2>
-        <p class="feedback__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="feedback__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="feedback__form form" name="feedback" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--user-info">
             <div class="form__row">
@@ -50,7 +50,7 @@
             </div>
             <div class="form__row">
               <label class="form__label form__label--input" for="name-id">Имя:</label>
-              <input class="form__field" type="text" name="name" id="name-id" placeholder="Укажите имя *" required>
+              <input class="form__field" type="text" name="name" id="name-id" placeholder="Введите ваше имя *" required>
             </div>
             <div class="form__row">
               <label class="form__label form__label--input" for="patronymic-id">Отчество:</label>
@@ -59,30 +59,32 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--check-group">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__row-inner">
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="selfie" id="achievement1-id" checked>
-                <label class="form__label" for="achievement1-id">Сделал селфи с акулой</label>
-              </div>
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="beach" id="achievement2-id" checked>
-                <label class="form__label" for="achievement2-id">Обгорел на пляже</label>
-              </div>
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="celeb" id="achievement3-id">
-                <label class="form__label" for="achievement3-id">Видел Чака Норриса</label>
-              </div>
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="souvenir" id="achievement4-id">
-                <label class="form__label" for="achievement4-id">Накупил сувениров</label>
-              </div>
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="tower" id="achievement5-id" checked>
-                <label class="form__label" for="achievement5-id">Удержал башню</label>
-              </div>
-              <div class="form__row">
-                <input class="form__checkbox" type="checkbox" name="hotel" id="achievement6-id">
-              <label class="form__label" for="achievement6-id">Разгромил отель</label>
+            <div class="form__row-wrapper">
+              <div class="form__row-inner">
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="selfie" id="achievement1-id" checked>
+                  <label class="form__label" for="achievement1-id">Сделал селфи с акулой</label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="beach" id="achievement2-id" checked>
+                  <label class="form__label" for="achievement2-id">Обгорел на пляже</label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="celeb" id="achievement3-id">
+                  <label class="form__label" for="achievement3-id">Видел Чака Норриса</label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="souvenir" id="achievement4-id">
+                  <label class="form__label" for="achievement4-id">Накупил сувениров</label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="tower" id="achievement5-id" checked>
+                  <label class="form__label" for="achievement5-id">Удержал башню</label>
+                </div>
+                <div class="form__row">
+                  <input class="form__checkbox" type="checkbox" name="hotel" id="achievement6-id">
+                <label class="form__label" for="achievement6-id">Разгромил отель</label>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -101,29 +103,28 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--radio-group">
             <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <div class="form__row">
-              <input class="form__radio" type="radio" name="app" id="app1-id" value="iOS" checked>
-              <label class="form__label" for="app1-id">Pink для iOS</label>
-            </div>
-            <div class="form__row">
-              <input class="form__radio" type="radio" name="app" id="app2-id" value="Android">
-              <label class="form__label" for="app2-id">Pink на Android</label>
-            </div>
-            <div class="form__row">
-              <input class="form__radio" type="radio" name="app" id="app3-id" value="Windows Phone">
-              <label class="form__label" for="app3-id">Windows Phone</label>
+            <div class="form__row-inner">
+              <div class="form__row">
+                <input class="form__radio" type="radio" name="app" id="app1-id" value="iOS" checked>
+                <label class="form__label" for="app1-id">Pink для iOS</label>
+              </div>
+              <div class="form__row">
+                <input class="form__radio" type="radio" name="app" id="app2-id" value="Android">
+                <label class="form__label" for="app2-id">Pink на Android</label>
+              </div>
+              <div class="form__row">
+                <input class="form__radio" type="radio" name="app" id="app3-id" value="Windows Phone">
+                <label class="form__label" for="app3-id">Windows Phone</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--message">
             <legend class="form__legend">Опишите свои эмоции</legend>
-            <div class="form__row">
-              <!--<label class="form__label" for="message-id"></label>-->
-              <textarea class="form__textarea" name="message" id="message-id" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
+            <textarea class="form__textarea" name="message" id="message-id" rows="2" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <p class="form__row form__row--submit-group">
-            <button class="form__button btn btn--form" type="submit">Отправить</button>
-            <span class="form__note">* — обязательные поля</span>
+            <button class="form__button btn btn--form" type="submit">Отправить форму</button>
+            <small class="form__note">* — обязательные<span> для заполнения</span> поля</small>
           </p>
         </form>
       </section>
@@ -144,7 +145,7 @@
             <a class="social__link social__link--youtube" href="#">Youtube</a>
           </li>
         </ul>
-        <p class="footer__copyright copyright">Разработано
+        <p class="page-footer__copyright copyright">Разработано
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="copyright__logo" src="#" width="40" height="50" alt="HTMLAcademy">
           </a>
@@ -169,6 +170,6 @@
         <button class="pop-up__button btn" type="button">Ок</button>
       </div>
     </div>
-    <script type="text/javascript" src="js/script.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
