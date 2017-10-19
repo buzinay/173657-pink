@@ -43,20 +43,22 @@
         <h2 class="visually-hidden">Форма обратной связи для участия в конкурсе</h2>
         <p class="feedback__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="feedback__form form" name="feedback" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset form__fieldset--user-info">
-            <div class="form__row">
-              <label class="form__label form__label--input" for="surname-id">Фамилия:</label>
-              <input class="form__field" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию *" required>
-            </div>
-            <div class="form__row">
-              <label class="form__label form__label--input" for="name-id">Имя:</label>
-              <input class="form__field" type="text" name="name" id="name-id" placeholder="Введите ваше имя *" required>
-            </div>
-            <div class="form__row">
-              <label class="form__label form__label--input" for="patronymic-id">Отчество:</label>
-              <input class="form__field" type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже" required>
-            </div>
-          </fieldset>
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset form__fieldset--user-info">
+              <div class="form__row">
+                <label class="form__label form__label--input" for="surname-id">Фамилия:</label>
+                <input class="form__field" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="form__row">
+                <label class="form__label form__label--input" for="name-id">Имя:</label>
+                <input class="form__field" type="text" name="name" id="name-id" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="form__row">
+                <label class="form__label form__label--input" for="patronymic-id">Отчество:</label>
+                <input class="form__field" type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже" required>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset form__fieldset--check-group">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__row-wrapper">
