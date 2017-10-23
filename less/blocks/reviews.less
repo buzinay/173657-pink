@@ -69,6 +69,7 @@
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
+    position: relative;
     padding-top: 70px;
     padding-bottom: 40px;
   }
@@ -78,6 +79,10 @@
     margin: 0 auto;
     margin-bottom: 37px;
     padding-top: 115px;
+
+    background-image: url("../img/bg-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   .reviews__author-name {
@@ -87,5 +92,18 @@
 
   .reviews__author-info {
     font-size: 18px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 200px;
+  }
+
+  .reviews__button--left {
+    left: 0;
+  }
+
+  .reviews__button--right {
+    right: 0;
   }
 }

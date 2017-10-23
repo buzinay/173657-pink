@@ -1,16 +1,28 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   font-size: 14px;
   line-height: 18px;
 }
 
-.copyright__logo {
-  display: inline-block;
+.copyright__svg {
+  fill: @text-red;
 }
 
 .copyright__link {
   font-size: 0;
   line-height: 0;
+}
+
+.copyright__link:hover .copyright__svg,
+.copyright__link:focus .copyright__svg {
+  fill: @base-text-color;
+}
+
+.copyright__link:active .copyright__svg {
+  opacity: 0.3;
 }
 
 @media (min-width: @desktop-width) {

@@ -1,6 +1,8 @@
 .settings {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   width: 200px;
   margin: 0 auto;
   padding: 0;
@@ -15,10 +17,29 @@
   padding: 0;
 
   font-size: 0;
-
+  background-color: inherit;
   border: 0;
+}
 
-  background-color: @white;
+.settings__button--contrast {
+  width: 32px;
+  height: 32px;
+}
+
+.settings__svg {
+  fill: @base-text-color;
+  opacity: 0.3;
+}
+
+.settings__button:hover .settings__svg,
+.settings__button:focus .settings__svg {
+  opacity: 0.5;
+}
+
+.settings__button--active .settings__svg,
+.settings__button:active .settings__svg {
+  fill: @text-red;
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,15 +57,34 @@
     border-bottom: 1px solid @table-grey;
   }
 
-  .settings__button {
+  .settings__button,
+  .settings__svg {
     width: 25px;
     height: 25px;
+  }
+
+  .settings__button--contrast,
+  .settings__svg--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .settings__svg {
+    fill: @text-red;
+    opacity: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .settings__button {
-    width: 50px;
-    height: 50px;
+  .settings__button,
+  .settings__svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .settings__button--contrast,
+  .settings__svg--contrast {
+    width: 32px;
+    height: 32px;
   }
 }

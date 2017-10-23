@@ -264,17 +264,9 @@
     justify-content: space-between;
   }
 
-  .form__fieldset--radio-group .form__row-inner {
-    min-height: 180px;
-  }
-
-  .form__fieldset--check-group .form__row-inner {
-    min-height: 440px;
-  }
-
   .form__fieldset--check-group .form__row {
     flex: 1 1 auto;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .form__fieldset--user-info {
@@ -295,11 +287,6 @@
   .form__fieldset--user-contacts .form__legend {
     display: block;
   }
-
-  /*.form__fieldset--check-group .form__legend,
-  .form__fieldset--message .form__legend {
-    width: auto;
-  }*/
 
   .form__fieldset--user-info .form__row {
     display: flex;
@@ -379,6 +366,38 @@
 
   .form__button {
     margin-bottom: 0;
+  }
+
+  .form__row--phone,
+  .form__row--email {
+    position: relative;
+  }
+
+  .form__row--phone::before,
+  .form__row--email::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    display: block;
+    width: 58px;
+    height: 58px;
+
+    background-color: @table-grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .form__row--email::before {
+    background-image: url("../img/bg-mail.svg");
+    background-size: 18px 13px;
+  }
+
+  .form__row--phone::before {
+    background-image: url("../img/bg-phone.svg");
+    background-size: 20px 22px;
+
   }
 }
 
