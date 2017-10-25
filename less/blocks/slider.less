@@ -1,7 +1,7 @@
 .slider__item {
   display: none;
 
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .slider__item--active {
@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 60px;
+  width: 58px;
 
   margin: 0 auto;
 }
@@ -32,9 +32,20 @@
 
   font-size: 0;
 
-  background-color: #bec2c7;
+  background-color: @base-text-color;
   border-width: 0;
   border-radius: 50%;
+  opacity: 0.3;
+
+  &:hover {
+    background-color: @base-text-color;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: @base-text-color;
+    opacity: 0.1;
+  }
 }
 
 .slider__toggle--active {
@@ -42,6 +53,12 @@
   height: 12px;
   background-color: transparent;
   border: 3px solid @base-text-color;
+  opacity: 1;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (min-width: @tablet-width) {

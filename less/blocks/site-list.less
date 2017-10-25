@@ -32,7 +32,6 @@
   }
 
   &:active {
-    /*color: @white;*/
     opacity: 0.3;
   }
 }
@@ -58,6 +57,12 @@
     padding-right: 0;
 
     color: @white;
+  }
+
+  .site-list__link[href] {
+    &:active {
+      color: @white;
+    }
   }
 
   .site-list__link--active {

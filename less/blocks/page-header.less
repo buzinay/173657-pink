@@ -48,7 +48,8 @@
 }
 
 .page-header__logo:active .page-header__svg {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: @white;
+  opacity: 0.3;
 }
 
 .page-header__title {
@@ -69,6 +70,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__logo {
+    top: 26px;
+  }
+
   .page-header__content {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top center;
@@ -146,7 +151,7 @@
 
   .page-header__title {
     width: 830px;
-    padding-top: 65px;
+    padding-top: 106px;
     padding-bottom: 100px;
   }
 
