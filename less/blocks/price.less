@@ -1,9 +1,13 @@
 .price__wrapper {
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 45px;
+  padding-top: 93px;
+  padding-bottom: 46px;
 
   background-color: @bg-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% auto;
 
   overflow: hidden;
 }
@@ -34,18 +38,51 @@
 
   width: 278px;
 
-  padding: 14px;
+  padding: 13px 22px 15px;
   vertical-align: middle;
 
   border: 2px solid @table-grey;
 }
 
+.price__title--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    display: block;
+    width: 75px;
+    height: 75px;
+
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    background-position: left top;
+  }
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+
+    font-size: 14px;
+
+    transform: rotate(-45deg);
+  }
+}
+
 .price__cell {
+  position: relative;
+
   background-color: @white;
 }
 
 .price__title {
-  padding: 16px 40px 22px;
+  padding: 17px 40px 22px;
 
   font-size: 18px;
   line-height: 30px;
@@ -75,18 +112,41 @@
   font-size: 24px;
 }
 
+.price__value {
+  font-size: 0;
+  line-height: 0;
+  width: 27px;
+}
+
+.price__icon {
+  position: absolute;
+  right: 17px;
+}
+
+.price__icon--no {
+  fill: #f25b26;
+}
+
+.price__icon--yes {
+  fill: #3dc644;
+}
+
 @media (min-width: @tablet-width) {
   .price__wrapper {
-    padding-top: 86px;
+    padding-top: 89px;
     padding-bottom: 70px;
+
+    background-size: 100%;
   }
 
   .price__table-wrapper {
+    margin-left: auto;
     margin-bottom: 0;
   }
 
   .price__table {
     width: 620px;
+    transform: none;
   }
 
   .price__title--hidden {
@@ -103,18 +163,38 @@
   .price__cell,
   .price__title {
     width: 25%;
-    padding: 8px 15px;
   }
 
   .price__title {
+    padding: 11px 15px;
     font-size: 16px;
+  }
+
+  .price__title--hit {
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 58px;
+      height: 58px;
+
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 58px 58px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 6px;
+    }
   }
 
   .price__cost {
     font-size: 18px;
+    line-height: 26px;
   }
 
   .price__cell {
+    padding: 7px 15px;
     text-transform: none;
   }
 
@@ -126,6 +206,10 @@
     display: block;
     width: 28px;
     margin: 0 auto;
+  }
+
+  .price__icon {
+    position: static;
   }
 }
 
@@ -144,6 +228,23 @@
     padding-bottom: 20px;
 
     font-size: 18px;
+  }
+
+  .price__title--hit {
+    &::before {
+      top: -1px;
+      left: 0;
+
+      width: 75px;
+      height: 75px;
+
+      background-size: 75px 75px;
+    }
+
+    &::after {
+      top: 10px;
+      left: 8px;
+    }
   }
 
   .price__cost {

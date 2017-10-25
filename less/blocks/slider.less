@@ -1,11 +1,15 @@
 .slider__item {
   display: none;
 
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .slider__item--active {
   display: block;
+}
+
+.slider__button {
+  display: none;
 }
 
 .slider__toggles {
@@ -13,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 60px;
+  width: 58px;
 
   margin: 0 auto;
 }
@@ -28,9 +32,20 @@
 
   font-size: 0;
 
-  background-color: #bec2c7;
+  background-color: @base-text-color;
   border-width: 0;
   border-radius: 50%;
+  opacity: 0.3;
+
+  &:hover {
+    background-color: @base-text-color;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: @base-text-color;
+    opacity: 0.1;
+  }
 }
 
 .slider__toggle--active {
@@ -38,6 +53,12 @@
   height: 12px;
   background-color: transparent;
   border: 3px solid @base-text-color;
+  opacity: 1;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -49,6 +70,37 @@
 @media (min-width: @desktop-width) {
   .slider__toggles {
     display: none;
+  }
+
+  .slider__button {
+    display: block;
+
+    padding: 0;
+    width: 25px;
+    height: 45px;
+
+    font-size: 0;
+
+    border: none;
+    background: none;
+  }
+
+  .slider__button--left {
+    transform: rotate(180deg);
+  }
+
+  .slider__svg {
+    fill: #bec2c7;
+  }
+
+  .slider__button:hover .slider__svg,
+  .slider__button:focus .slider__svg {
+    fill: #7e868f;
+  }
+
+  .slider__button:active .slider__svg {
+    fill: #bec2c7;
+    opacity: 0.3;
   }
 
   .slider__item {

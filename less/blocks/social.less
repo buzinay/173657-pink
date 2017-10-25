@@ -9,15 +9,42 @@
 }
 
 .social__link {
+  position: relative;
   display: block;
 
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 
   font-size: 0;
 
-  background-color: @bg-grey;
+  border: 3px solid @bg-grey;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: @base-text-color;
+  }
+
+  &:active {
+    border-color: @bg-grey;
+  }
+}
+
+.social__svg {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  fill: @text-red;
+}
+
+.social__link:active .social__svg {
+  opacity: 0.3;
+}
+
+.social__svg--facebook {
+  top: 14px;
 }
 
 @media (min-width: @tablet-width) {

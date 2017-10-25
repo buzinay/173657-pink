@@ -5,7 +5,6 @@
 
 .user-foto__image--panoramic {
   width: 100%;
-  height: 135px;
 }
 
 .user-foto__caption {
@@ -51,12 +50,11 @@
 @media (min-width: @tablet-width) {
   .user-foto__image {
     width: auto;
-    height: 300px;
   }
 
   .user-foto--panoramic .user-foto__image {
     width: 100%;
-    height: 510px;
+    /*height: 510px;*/
   }
 
   .user-foto__caption {
@@ -71,8 +69,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    width: 620px;
     min-height: auto;
 
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 25px 28px 16px;
   }
 
@@ -99,12 +101,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .user-foto__image {
-    height: 400px;
+  .user-foto--panoramic .user-foto__image {
+    /*height: 508px;*/
   }
 
-  .user-foto--panoramic .user-foto__image {
-    height: 508px;
+  .user-foto__caption--panoramic {
+    width: 940px;
   }
 
   .user-foto__message {

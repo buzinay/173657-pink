@@ -12,3 +12,26 @@ navToggle.addEventListener('click', function() {
             navMain.classList.remove('main-nav--opened');
           }
 });
+
+/*var myMap;
+var myPlacemark;
+ymaps.ready(init);
+  function init () {
+    myMap = new ymaps.Map('map-id', {
+        center: [59.9386,30.32],
+        zoom: 15,
+        controls: ["zoomControl", "fullscreenControl"]
+  });
+
+
+    myPlacemark = new ymaps.Placemark([59.938631, 30.323055],{
+      balloonContentBody: '',
+    },{
+            iconLayout: 'default#image',
+            iconImageHref: 'img/icon-map-marker.svg',
+            iconImageSize: [36, 36],
+            iconImageOffset: [-18, -18]
+          });
+
+      myMap.geoObjects.add(myPlacemark);
+}*/
