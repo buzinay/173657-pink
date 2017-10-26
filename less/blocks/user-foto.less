@@ -8,6 +8,32 @@
   height: 136px;
 }
 
+.user-foto--panoramic {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: 0;
+    right: 6.25%;
+
+    display: block;
+    width: 128px;
+    height: 24px;
+    padding: 6px;
+
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @white;
+    text-align: center;
+
+    background-color: @text-red;
+    z-index: 200;
+  }
+}
+
 .user-foto__caption {
   padding: 20px 16px;
 
@@ -56,6 +82,10 @@
 
   .user-foto__image {
     width: auto;
+  }
+
+  .user-foto--panoramic::before {
+    top: 57px;
   }
 
   .user-foto--panoramic .user-foto__image {

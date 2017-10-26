@@ -458,11 +458,14 @@
     padding-bottom: 10px;
   }
 
-  .form__fieldset--check-group .form__row-inner {
+  .form__fieldset--check-group .form__row-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 163px;
+  }
+
+  .form__fieldset--check-group .form__row-inner {
+    flex-direction: column;
   }
 
   .form__fieldset--radio-group .form__row-inner {
@@ -473,28 +476,12 @@
     width: 280px;
   }
 
-  .form__fieldset--check-group .form__row {
-    flex-basis: 205px;
-  }
+  /*.form__fieldset--check-group .form__row {
+    min-width: 205px;
+  }*/
 
-  .form__fieldset--check-group .form__row:nth-child(2) {
-    order: 4;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(3) {
-    order: 2;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(4) {
-    order: 5;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(5) {
-    order: 3;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(6) {
-    order: 6;
+  .form__fieldset--check-group .form__row:last-child {
+    margin-bottom: 50px;
   }
 
   .form__row--submit-group {
