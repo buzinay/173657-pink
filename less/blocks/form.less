@@ -5,18 +5,25 @@
 .form__fieldset {
   position: relative;
 
-  /*width: 280px;*/
   margin: 0;
-  padding: 35px 25px 20px;
+  padding: 35px 25px 23px;
 
   border: 0;
 }
 
 .form__fieldset--check-group,
 .form__fieldset--radio-group {
-  padding-top: 120px;
-  padding-bottom: 40px;
   background-color: @bg-grey;
+}
+
+.form__fieldset--check-group {
+  padding-top: 118px;
+  padding-bottom: 46px;
+}
+
+.form__fieldset--radio-group {
+  padding-top: 114px;
+  padding-bottom: 45px;
 }
 
 .form__checkbox,
@@ -89,9 +96,9 @@
     content: "";
     position: absolute;
     left: 16px;
-    top: -20%;
+    top: -14%;
 
-    width: 10px;
+    width: 8px;
     height: 20px;
 
     border: 2px solid @text-red;
@@ -104,6 +111,7 @@
 
 .form__fieldset--message {
   padding-top: 74px;
+  padding-bottom: 16px;
 }
 
 .form__fieldset--user-contacts .form__legend {
@@ -111,7 +119,7 @@
 }
 
 .form__row {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .form__fieldset--check-group .form__row {
@@ -134,23 +142,19 @@
 
 .form__legend {
   position: absolute;
-  top: 40px;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 280px;
   padding: 0;
 
   line-height: 18px;
   text-align: center;
 }
 
-.form__fieldset--check-group .form__legend {
-  /*width: 220px;*/
-}
-
-.form__fieldset--message .form__legend {
-  /*width: 280px;*/
-}
-
 .form__label {
-  padding-left: 20px;
+  padding-left: 22px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -169,10 +173,10 @@
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 18px;
+  padding: 14px 17px;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-family: inherit;
   color: @base-text-color;
 
@@ -189,6 +193,10 @@
   &:focus {
     border-color: @text-red;
   }
+}
+
+.form__field {
+  height: 62px;
 }
 
 .form__textarea {
@@ -232,7 +240,6 @@
   .form {
     display: flex;
     flex-direction: column;
-    /*.container();*/
     width: 620px;
     margin: 0 auto;
   }
@@ -308,7 +315,7 @@
 
   .form__fieldset--check-group {
     order: 4;
-    padding-bottom: 55px;
+    padding-bottom: 51px;
   }
 
   .form__fieldset--message {
@@ -319,7 +326,7 @@
   }
 
   .form__textarea {
-    min-height: 190px;
+    min-height: 193px;
   }
 
   .form__row--submit-group {
@@ -334,13 +341,17 @@
 
   .form__legend {
     position: static;
+    width: auto;
+
     margin-bottom: -14px;
     padding: 0 30px;
+
+    transform: none;
   }
 
   .form__checkbox + .form__label,
   .form__radio + .form__label {
-    padding-left: 60px;
+    padding-left: 58px;
   }
 
   .form__fieldset--user-contacts .form__row {
@@ -356,6 +367,7 @@
 
   .form__fieldset--user-info .form__label {
     margin-right: 20px;
+    margin-bottom: 0;
     padding-left: 0;
   }
 
@@ -410,7 +422,7 @@
     margin: 0 auto;
   }
 
-  .form__fieldset-wrapper { /*Вопрос???*/
+  .form__fieldset-wrapper {
     display: flex;
     width: 435px;
   }
@@ -421,11 +433,11 @@
 
   .form__fieldset--radio-group {
     width: 435px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 65px 25px 58px 25px;
   }
 
   .form__fieldset--user-contacts {
+    margin-bottom: 56px;
     padding-bottom: 12px;
   }
 
@@ -446,11 +458,14 @@
     padding-bottom: 10px;
   }
 
-  .form__fieldset--check-group .form__row-inner {
+  .form__fieldset--check-group .form__row-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 163px;
+  }
+
+  .form__fieldset--check-group .form__row-inner {
+    flex-direction: column;
   }
 
   .form__fieldset--radio-group .form__row-inner {
@@ -461,28 +476,12 @@
     width: 280px;
   }
 
-  .form__fieldset--check-group .form__row {
-    flex-basis: 205px;
-  }
+  /*.form__fieldset--check-group .form__row {
+    min-width: 205px;
+  }*/
 
-  .form__fieldset--check-group .form__row:nth-child(2) {
-    order: 4;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(3) {
-    order: 2;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(4) {
-    order: 5;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(5) {
-    order: 3;
-  }
-
-  .form__fieldset--check-group .form__row:nth-child(6) {
-    order: 6;
+  .form__fieldset--check-group .form__row:last-child {
+    margin-bottom: 50px;
   }
 
   .form__row--submit-group {
@@ -490,11 +489,12 @@
   }
 
   .form__textarea {
-    min-height: 125px;
+    min-height: 127px;
   }
 
   .form__fieldset--message {
     margin-bottom: 65px;
+    padding-top: 48px;
     padding-bottom: 45px;
   }
 

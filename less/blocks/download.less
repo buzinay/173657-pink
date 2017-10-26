@@ -1,14 +1,3 @@
-/*.download {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
-  }
-}*/
-
 .download__content {
   display: flex;
   flex-direction: column;
@@ -149,18 +138,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  /*.download {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: top center;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
-    }
-  }*/
-
   .download__content {
     flex-direction: row-reverse;
+    align-items: flex-end;
     width: 940px;
     margin: 0 auto;
 
@@ -172,7 +152,7 @@
     width: 640px;
     min-height: 853px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 70% bottom;
+    background-position: 69% bottom;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -181,13 +161,13 @@
   }
 
   .download__wrapper {
-    margin-bottom: 120px;
+    margin-bottom: 122px;
   }
 
   .download__slogan {
     width: 240px;
 
-    margin-bottom: 55px;
+    margin-bottom: 51px;
 
     font-size: 50px;
     line-height: 60px;
