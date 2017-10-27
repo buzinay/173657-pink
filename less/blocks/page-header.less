@@ -108,14 +108,21 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__content {
+  .page-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }
+  }
+
+  .page-header__content {
+    background-color: transparent;
+    background-image: none;
   }
 
   .page-header__svg--tablet {
@@ -127,8 +134,8 @@
   }
 
   .page-header__nav {
-    position: absolute;
-    top: 0;
+  /*  position: absolute;
+    top: 0;*/
     width: 100%;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -137,7 +144,7 @@
   }
 
   .page-header__nav-wrapper {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     justify-content: space-between;
 

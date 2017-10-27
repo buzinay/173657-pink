@@ -76,8 +76,6 @@
 }
 
 .price__cell {
-  position: relative;
-
   background-color: @white;
 }
 
@@ -115,12 +113,17 @@
 .price__value {
   font-size: 0;
   line-height: 0;
-  width: 27px;
+  width: 30px;
+}
+
+.price__cell-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price__icon {
-  position: absolute;
-  right: 17px;
+  width: 30px;
 }
 
 .price__icon--no {
@@ -203,13 +206,7 @@
   }
 
   .price__value {
-    display: block;
-    width: 28px;
     margin: 0 auto;
-  }
-
-  .price__icon {
-    position: static;
   }
 }
 

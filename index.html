@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <title>Пинк</title>
   </head>
   <body>
@@ -250,7 +254,7 @@
             <blockquote class="reviews__item slider__item slider__item--active">
               <div class="reviews__content">
                 <cite class="reviews__author-name">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая<span></cite>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
               </div>
             </blockquote>
             <blockquote class="reviews__item slider__item">
@@ -310,28 +314,34 @@
                     Розовый фильтр
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Розовый фильтр </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Розовый фильтр </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Розовый фильтр </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                 </tr>
                 <tr class="price__row">
@@ -339,28 +349,34 @@
                     Смайлики
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Смайлики </span>
-                    <span class="price__value price__value--no">
-                      <svg class="price__icon price__icon--no" width="27" height="27">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>Нет
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Смайлики </span>
+                      <span class="price__value price__value--no">
+                        <svg class="price__icon price__icon--no" width="27" height="27">
+                          <use xlink:href="#icon-no"></use>
+                        </svg>Нет
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Смайлики </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Смайлики </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Смайлики </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Смайлики </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                 </tr>
                 <tr class="price__row">
@@ -368,28 +384,34 @@
                     Комментарии
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Комментарии </span>
-                    <span class="price__value price__value--no">
-                      <svg class="price__icon price__icon--no" width="27" height="27">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>Нет
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Комментарии </span>
+                      <span class="price__value price__value--no">
+                        <svg class="price__icon price__icon--no" width="27" height="27">
+                          <use xlink:href="#icon-no"></use>
+                        </svg>Нет
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Комментарии </span>
-                    <span class="price__value price__value--no">
-                      <svg class="price__icon price__icon--no" width="27" height="27">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>Нет
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Комментарии </span>
+                      <span class="price__value price__value--no">
+                        <svg class="price__icon price__icon--no" width="27" height="27">
+                          <use xlink:href="#icon-no"></use>
+                        </svg>Нет
+                      </span>
+                    </div>
                   </td>
                   <td class="price__cell">
-                    <span class="price__param">Комментарии </span>
-                    <span class="price__value price__value--yes">
-                      <svg class="price__icon price__icon--yes" width="30" height="25">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>Да
-                    </span>
+                    <div class="price__cell-wrapper">
+                      <span class="price__param">Комментарии </span>
+                      <span class="price__value price__value--yes">
+                        <svg class="price__icon price__icon--yes" width="30" height="25">
+                          <use xlink:href="#icon-yes"></use>
+                        </svg>Да
+                      </span>
+                    </div>
                   </td>
                 </tr>
               <tbody>
