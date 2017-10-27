@@ -18,7 +18,7 @@
 
 .form__fieldset--check-group {
   padding-top: 118px;
-  padding-bottom: 46px;
+  padding-bottom: 0;
 }
 
 .form__fieldset--radio-group {
@@ -130,8 +130,7 @@
   margin-bottom: 42px;
 }
 
-.form__fieldset--radio-group .form__row:last-child,
-.form__fieldset--check-group .form__row:last-child {
+.form__fieldset--radio-group .form__row:last-child {
   margin-bottom: 0;
 }
 
@@ -315,7 +314,7 @@
 
   .form__fieldset--check-group {
     order: 4;
-    padding-bottom: 51px;
+    padding-bottom: 0;
   }
 
   .form__fieldset--message {
@@ -422,13 +421,24 @@
     margin: 0 auto;
   }
 
+  .form__fieldset {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
   .form__fieldset-wrapper {
     display: flex;
     width: 435px;
   }
 
   .form__fieldset--user-info {
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
+  }
+
+  .form__fieldset--user-info .form__row {
+    margin-bottom: 54px;
   }
 
   .form__fieldset--radio-group {
@@ -455,7 +465,8 @@
   }
 
   .form__fieldset--check-group {
-    padding-bottom: 10px;
+    padding-top: 64px;
+    padding-bottom: 6px;
   }
 
   .form__fieldset--check-group .form__row-wrapper {
@@ -490,6 +501,7 @@
 
   .form__textarea {
     min-height: 127px;
+    padding-top: 17px;
   }
 
   .form__fieldset--message {
