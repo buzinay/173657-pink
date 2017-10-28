@@ -18,7 +18,7 @@ navToggle.addEventListener('click', function() {
           }
 });
 
-/*var myMap;
+var myMap;
 var myPlacemark;
 ymaps.ready(init);
   function init () {
@@ -27,7 +27,6 @@ ymaps.ready(init);
         zoom: 15,
         controls: ["zoomControl", "fullscreenControl"]
   });
-
 
     myPlacemark = new ymaps.Placemark([59.938631, 30.323055],{
       balloonContentBody: '',
@@ -39,4 +38,4 @@ ymaps.ready(init);
           });
 
       myMap.geoObjects.add(myPlacemark);
-}*/
+}
