@@ -12,38 +12,38 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__nav">
-        <div class="page-header__nav-wrapper">
-          <a class="page-header__logo" href="index.html">
-            <svg class="page-header__svg page-header__svg--mobile" width="75" height="23">
-              <use xlink:href="#icon-pink-white-mobile"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--tablet" width="147" height="41">
-              <use xlink:href="#icon-pink-white-tablet"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--desktop" width="147" height="41">
-              <use xlink:href="#icon-pink-white-desktop"></use>
-            </svg>
-          </a>
-          <nav class="main-nav main-nav--opened">
+      <nav class=" page-header__nav main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo" href="index.html">Логотип Пинк
+              <svg class="main-nav__svg main-nav__svg--mobile" width="75" height="23">
+                <use xlink:href="#icon-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--tablet" width="147" height="41">
+                <use xlink:href="#icon-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--desktop" width="147" height="41">
+                <use xlink:href="#icon-pink-white-desktop"></use>
+              </svg>
+            </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
       <div class="page-header__content">
         <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
@@ -53,22 +53,20 @@
         <h2 class="visually-hidden">Форма обратной связи для участия в конкурсе</h2>
         <p class="feedback__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="feedback__form form" name="feedback" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset--user-info">
-              <div class="form__row">
-                <label class="form__label form__label--input" for="surname-id">Фамилия:</label>
-                <input class="form__field" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию *" required>
-              </div>
-              <div class="form__row">
-                <label class="form__label form__label--input" for="name-id">Имя:</label>
-                <input class="form__field" type="text" name="name" id="name-id" placeholder="Введите ваше имя *" required>
-              </div>
-              <div class="form__row">
-                <label class="form__label form__label--input" for="patronymic-id">Отчество:</label>
-                <input class="form__field" type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже" required>
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--user-info">
+            <div class="form__row">
+              <label class="form__label form__label--input" for="surname-id">Фамилия:</label>
+              <input class="form__field" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="form__row">
+              <label class="form__label form__label--input" for="name-id">Имя:</label>
+              <input class="form__field" type="text" name="name" id="name-id" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="form__row">
+              <label class="form__label form__label--input" for="patronymic-id">Отчество:</label>
+              <input class="form__field" type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже" required>
+            </div>
+          </fieldset>
           <fieldset class="form__fieldset form__fieldset--check-group">
             <legend class="form__legend">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
             <div class="form__row-wrapper">
@@ -84,7 +82,7 @@
               </div>
               <div class="form__row-inner">
                 <div class="form__row">
-                  <input class="form__checkbox" type="checkbox" name="celeb" id="achievement3-id">
+                  <input class="form__checkbox" type="checkbox" name="chack" id="achievement3-id">
                   <label class="form__label" for="achievement3-id">Видел Чака Норриса</label>
                 </div>
                 <div class="form__row">
@@ -136,7 +134,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--message">
             <legend class="form__legend">Опишите свои эмоции</legend>
-            <textarea class="form__textarea" name="message" id="message-id" rows="2" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__textarea" name="message" id="message-id" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <p class="form__row form__row--submit-group">
             <button class="form__button btn btn--form" type="submit">Отправить форму</button>
@@ -157,21 +155,21 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--twitter" width="17.5" height="15">
                 <use xlink:href="#icon-twitter"></use>
               </svg>Twitter
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--facebook" width="12" height="20">
                 <use xlink:href="#icon-facebook"></use>
               </svg>Facebook
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--youtube" width="15" height="14">
                 <use xlink:href="#icon-youtube"></use>
               </svg>Youtube
@@ -192,9 +190,9 @@
         <h2 class="pop-up__title">Ваша заявка отправлена</h2>
         <p class="pop-up__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br>оповестим вас.</p>
       </div>
-    <div class="pop-up__btn-wrapper">
-      <button class="pop-up__button btn btn--success" type="button">Закрыть окно</button>
-    </div>
+      <div class="pop-up__btn-wrapper">
+        <button class="pop-up__button btn btn--success" type="button">Закрыть окно</button>
+      </div>
     </div>
     <div class="pop-up pop-up--failure">
       <div class="pop-up__wrapper">

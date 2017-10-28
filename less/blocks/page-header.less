@@ -22,49 +22,8 @@
   z-index: 100;
 }
 
-.page-header__nav--opened {
-  background-color: @base-text-color;
-}
-
-.page-header__nav--closed {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .page-header--index-page {
   background-image: none;
-}
-
-.page-header__logo {
-  /*position: absolute;
-  left: 20px;
-  top: 22px;*/
-  display: block;
-  width: 150px;
-  padding: 22px 20px;
-
-  font-size: 0;
-  line-height: 0;
-
-  /*min-height: 25px;*/
-}
-
-.page-header__svg {
-  fill: @white;
-}
-
-.page-header__svg--tablet,
-.page-header__svg--desktop {
-  display: none;
-}
-
-.page-header__logo:hover .page-header__svg,
-.page-header__logo:focus .page-header__svg {
-  fill: @text-red;
-}
-
-.page-header__logo:active .page-header__svg {
-  fill: @white;
-  opacity: 0.3;
 }
 
 .page-header__title {
@@ -89,11 +48,6 @@
     margin-bottom: -108px;
   }
 
-  .page-header__logo {
-    padding-top: 26px;
-    padding-bottom: 42px;
-  }
-
   .page-header__content {
     display: flex;
 
@@ -104,14 +58,6 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
-  }
-
-  .page-header__svg--mobile {
-    display: none;
-  }
-
-  .page-header__svg--tablet {
-    display: block;
   }
 
   .page-header__title {
@@ -144,36 +90,11 @@
 
   .page-header__nav {
     margin-bottom: 0;
-    width: 100%;
-    padding-top: 28px;
-    padding-bottom: 28px;
-
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__content {
     background-color: transparent;
     background-image: none;
-  }
-
-  .page-header__svg--tablet {
-    display: none;
-  }
-
-  .page-header__svg--desktop {
-    display: block;
-  }
-
-  .page-header__nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    width: 940px;
-    margin: 0 auto;
-  }
-
-  .page-header__logo {
-    padding: 0;
   }
 
   .page-header__title {

@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
-    document.createElement( "picture" );
+      document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
     <title>Пинк - фото</title>
@@ -16,38 +16,38 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__nav">
-        <div class="page-header__nav-wrapper">
-          <a class="page-header__logo" href="index.html">
-            <svg class="page-header__svg page-header__svg--mobile" width="75" height="23">
-              <use xlink:href="#icon-pink-white-mobile"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--tablet" width="147" height="41">
-              <use xlink:href="#icon-pink-white-tablet"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--desktop" width="147" height="41">
-              <use xlink:href="#icon-pink-white-desktop"></use>
-            </svg>
-          </a>
-          <nav class="main-nav main-nav--opened">
+      <nav class=" page-header__nav main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo" href="index.html">Логотип Пинк
+              <svg class="main-nav__svg main-nav__svg--mobile" width="75" height="23">
+                <use xlink:href="#icon-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--tablet" width="147" height="41">
+                <use xlink:href="#icon-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--desktop" width="147" height="41">
+                <use xlink:href="#icon-pink-white-desktop"></use>
+              </svg>
+            </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Фотографии</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
       <div class="page-header__content">
         <h1 class="page-header__title page-header__title--foto-page">Фотографии пользователей</h1>
       </div>
@@ -56,7 +56,7 @@
       <section class="foto-gallery">
         <h2 class="visually-hidden">Галлерея фотографий пользователей</h2>
         <p class="foto-gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="foto-gallery__item foto-gallery__item--panoramic user-foto user-foto--panoramic">
+        <div class="foto-gallery__item user-foto user-foto--panoramic">
           <a href="#" class="user-foto__link">
             <picture>
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -66,7 +66,7 @@
           </a>
           <div class="user-foto__caption user-foto__caption--panoramic">
             <p class="user-foto__author">
-              Анна <span class="user-foto__time">(<time>5 минут</time> назад)</span>
+              Анна <span class="user-foto__time">(<span class="user-foto__time-value">5 минут</span> назад)</span>
             </p>
             <p class="user-foto__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="user-foto__like like">
@@ -92,7 +92,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Левон <span class="user-foto__time">(<time>5 часов</time> назад)</span>
+                Левон <span class="user-foto__time">(<span class="user-foto__time-value">5 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="user-foto__like like">
@@ -117,7 +117,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Антон <span class="user-foto__time">(<time>12 часов</time> назад)</span>
+                Антон <span class="user-foto__span">(<span class="user-foto__time-value">12 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Соседи буду рады!</p>
               <div class="user-foto__like like">
@@ -142,7 +142,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Борис <span class="user-foto__time">(<time>20 часов</time> назад)</span>
+                Борис <span class="user-foto__time">(<span class="user-foto__time-value">20 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="user-foto__like like">
@@ -167,7 +167,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Сергей <span class="user-foto__time">(<time>25 часов</time> назад)</span>
+                Сергей <span class="user-foto__time">(<span class="user-foto__time-value">25 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Самая кубанская в мире!</p>
               <div class="user-foto__like like">
@@ -192,7 +192,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Максим <span class="user-foto__time">(<time>40 часов</time> назад)</span>
+                Максим <span class="user-foto__time">(<span class="user-foto__time-value">40 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Где снег-то?</p>
               <div class="user-foto__like like">
@@ -217,7 +217,7 @@
             </a>
             <div class="user-foto__caption">
               <p class="user-foto__author">
-                Надежда <span class="user-foto__time">(<time>45 часов</time> назад)</span>
+                Надежда <span class="user-foto__time">(<span class="user-foto__time-value">45 часов</span> назад)</span>
               </p>
               <p class="user-foto__message">Всем GM и взаимные лайки!</p>
               <div class="user-foto__like like">
@@ -238,14 +238,14 @@
       <section class="foto-upload">
         <h2 class="visually-hidden">Загрузить свой снимок</h2>
         <form class="foto-upload__form form-upload" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-upload__part form-upload__part--image">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                <img class="form-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
-              </picture>
-            </div>
-            <div class="form-upload__part form-upload__part--load">
+          <div class="form-upload__part form-upload__part--image">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="form-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+            </picture>
+          </div>
+          <div class="form-upload__part form-upload__part--load">
             <ul class="form-upload__settings settings">
               <li class="settings__item settings__item--active">
                 <button class="settings__button settings__button--crop settings__button--active" type="button">

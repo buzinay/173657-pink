@@ -31,22 +31,30 @@
   .visually-hidden();
 }
 
+.form__label {
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .form__checkbox + .form__label,
 .form__radio + .form__label {
-  position: relative;
-  padding-left: 70px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 0;
 
   cursor: pointer;
 
   &::before {
     content: "";
-    position: absolute;
-    top: -8px;
-    left: 0;
 
     display: block;
     width: 36px;
     height: 36px;
+
+    margin-right: 15px;
 
     background-color: @white;
     border: 2px solid @table-grey;
@@ -75,37 +83,20 @@
 }
 
 .form__radio:checked + .form__label {
-  &::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    display: block;
-    width: 15px;
-    height: 15px;
-
-    background-color: @text-red;
-    border-radius: 50%;
+  &::before {
+    background-image: url("../img/bg-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px 35px;
   }
 }
 
 .form__checkbox:checked + .form__label {
-  &::after {
-    content: "";
-    position: absolute;
-    left: 16px;
-    top: -14%;
-
-    width: 8px;
-    height: 20px;
-
-    border: 2px solid @text-red;
-    border-top: 0;
-    border-left: 0;
-
-    transform: rotate(45deg);
+  &::before {
+    background-image: url("../img/bg-yes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
   }
 }
 
@@ -152,12 +143,6 @@
   text-align: center;
 }
 
-.form__label {
-  padding-left: 22px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
 .form__legend,
 .form__label--input {
   display: block;
@@ -175,7 +160,7 @@
   padding: 14px 17px;
 
   font-size: 18px;
-  line-height: 18px;
+  line-height: 30px;
   font-family: inherit;
   color: @base-text-color;
 
@@ -348,11 +333,6 @@
     transform: none;
   }
 
-  .form__checkbox + .form__label,
-  .form__radio + .form__label {
-    padding-left: 58px;
-  }
-
   .form__fieldset--user-contacts .form__row {
     display: flex;
     flex-direction: column-reverse;
@@ -426,12 +406,8 @@
     padding-right: 58px;
   }
 
-  .form__fieldset-wrapper {
-    display: flex;
-    width: 435px;
-  }
-
   .form__fieldset--user-info {
+    width: 435px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;

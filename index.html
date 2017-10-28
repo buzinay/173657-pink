@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
-    document.createElement( "picture" );
+      document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
     <title>Пинк</title>
@@ -16,40 +16,40 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--index-page">
-      <div class="page-header__nav">
-        <div class="page-header__nav-wrapper">
-          <a class="page-header__logo">Логотип Пинк
-            <svg class="page-header__svg page-header__svg--mobile" width="75" height="23">
-              <use xlink:href="#icon-pink-white-mobile"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--tablet" width="147" height="41">
-              <use xlink:href="#icon-pink-white-tablet"></use>
-            </svg>
-            <svg class="page-header__svg page-header__svg--desktop" width="147" height="41">
-              <use xlink:href="#icon-pink-white-desktop"></use>
-            </svg>
-          </a>
-          <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class=" page-header__nav main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo">Логотип Пинк
+              <svg class="main-nav__svg main-nav__svg--mobile" width="75" height="23">
+                <use xlink:href="#icon-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--tablet" width="147" height="41">
+                <use xlink:href="#icon-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__svg main-nav__svg--desktop" width="147" height="41">
+                <use xlink:href="#icon-pink-white-desktop"></use>
+              </svg>
+            </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                  <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
       <section class="page-header__content download">
-        <h1 class="visually-hidden">Пинк-мобильное приложение</h1>
+        <h1 class="visually-hidden">Пинк-мобильное приложение для загрузки и обмена фотографиями в сети</h1>
         <div class="download__content">
           <h2 class="visually-hidden">Приложение в магазинах мобильных приложений</h2>
           <div class="download__image"></div>
@@ -60,23 +60,25 @@
             <a class="download__button button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
-                <a class="download__link download__link--itunes" href="https://www.apple.com/itunes/">
-                  <svg class="download__icon download__icon--itunes" width="47" height="57" alt="Apple">
+                <a class="download__link" href="https://www.apple.com/itunes/">
+                  <svg class="download__icon download__icon--itunes" width="47" height="57" aria-label="Apple">
                     <use xlink:href="#icon-apple"></use>
                   </svg>Apple Store
                 </a>
               </li>
               <li class="download__item">
-                <a class="download__link download__link--google" href="https://play.google.com/store">
-                  <svg class="download__icon download__icon--google" width="43" height="47" alt="Android">
+                <a class="download__link" href="https://play.google.com/store">
+                  <svg class="download__icon download__icon--google" width="43" height="47" aria-label="Android">
                     <use xlink:href="#icon-android"></use>
-                  </svg>Google Play </a>
+                  </svg>Google Play
+                </a>
               </li>
               <li class="download__item">
-                <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone" class="download__link">
-                  <svg class="download__icon download__icon--windows" width="44" height="42" alt="Windows">
+                <a class="download__link" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone" class="download__link">
+                  <svg class="download__icon download__icon--windows" width="44" height="42" aria-label="Windows">
                     <use xlink:href="#icon-microsoft"></use>
-                  </svg>Windows Phone</a>
+                  </svg>Windows Phone
+                </a>
               </li>
             </ul>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -85,7 +87,6 @@
       </section>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Пинк-мобильное приложение для загрузки и обмена фотографиями в сети</h1>
       <section class="information">
         <h2 class="visually-hidden">Информация о приложении</h2>
         <p class="information__slogan">Устали от серости мегаполиса?</p>
@@ -131,23 +132,23 @@
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <div class="reviews__content">
-                <cite class="reviews__author-name"></cite>
-                <p class="reviews__text"></p>
+                <cite class="reviews__author-name">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая<span></cite>
+                <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
               </div>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <div class="reviews__content">
-                <cite class="reviews__author-name"></cite>
-                <p class="reviews__text"></p>
+                <cite class="reviews__author-name">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая<span></cite>
+                <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
               </div>
             </blockquote>
           </div>
-          <button class="reviews__button reviews__button--left slider__button slider__button--left" type="button">
+          <button class="reviews__button reviews__button--left slider__button" type="button">
             <svg class="slider__svg slider__svg--left" width="25" height="43">
               <use xlink:href="#icon-review-arrow-left"></use>
             </svg>Предыдущий отзыв
           </button>
-          <button class="reviews__button reviews__button--right slider__button slider__button--right" type="button">
+          <button class="reviews__button reviews__button--right slider__button" type="button">
             <svg class="slider__svg slider__svg--right" width="25" height="43">
               <use xlink:href="#icon-review-arrow-right"></use>
             </svg>Следующий отзыв
@@ -166,8 +167,7 @@
             <table class="price__table">
               <tbody>
                 <tr class="price__row">
-                  <th class="price__title price__title--hidden">
-                  </th>
+                  <th class="price__title price__title--hidden"></th>
                   <th class="price__title">
                     <span class="price__caption">База</span>
                     <span class="price__cost">1,99 USD</span>
@@ -187,7 +187,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__param">Розовый фильтр</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -197,7 +197,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__param">Розовый фильтр</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -207,7 +207,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Розовый фильтр </span>
+                      <span class="price__param">Розовый фильтр</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -222,7 +222,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Смайлики </span>
+                      <span class="price__param">Смайлики</span>
                       <span class="price__value price__value--no">
                         <svg class="price__icon price__icon--no" width="27" height="27">
                           <use xlink:href="#icon-no"></use>
@@ -232,7 +232,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Смайлики </span>
+                      <span class="price__param">Смайлики</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -242,7 +242,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Смайлики </span>
+                      <span class="price__param">Смайлики</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -257,7 +257,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Комментарии </span>
+                      <span class="price__param">Комментарии</span>
                       <span class="price__value price__value--no">
                         <svg class="price__icon price__icon--no" width="27" height="27">
                           <use xlink:href="#icon-no"></use>
@@ -267,7 +267,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Комментарии </span>
+                      <span class="price__param">Комментарии</span>
                       <span class="price__value price__value--no">
                         <svg class="price__icon price__icon--no" width="27" height="27">
                           <use xlink:href="#icon-no"></use>
@@ -277,7 +277,7 @@
                   </td>
                   <td class="price__cell">
                     <div class="price__cell-wrapper">
-                      <span class="price__param">Комментарии </span>
+                      <span class="price__param">Комментарии</span>
                       <span class="price__value price__value--yes">
                         <svg class="price__icon price__icon--yes" width="30" height="25">
                           <use xlink:href="#icon-yes"></use>
@@ -286,7 +286,7 @@
                     </div>
                   </td>
                 </tr>
-              <tbody>
+              </tbody>
             </table>
           </div>
           <p class="price__toggles slider__toggles slider__toggles--table">
@@ -299,7 +299,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="information__slogan information__slogan--self">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--phone">
               <h3 class="contacts__title">Звоните:</h3>
@@ -319,7 +319,7 @@
       </section>
     </main>
     <footer class="page-footer page-footer--hidden">
-      <div class="page-footer__wrapper page-footer__wrapper--index-page">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__svg page-footer__svg--mobile" width="147" height="41">
             <use xlink:href="#icon-pink-blue-mobile"></use>
@@ -330,21 +330,21 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--twitter" width="17.5" height="15">
                 <use xlink:href="#icon-twitter"></use>
               </svg>Twitter
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--facebook" width="12" height="20">
                 <use xlink:href="#icon-facebook"></use>
               </svg>Facebook
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link" href="#">
               <svg class="social__svg social__svg--youtube" width="15" height="14">
                 <use xlink:href="#icon-youtube"></use>
               </svg>Youtube

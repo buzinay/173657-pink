@@ -27,6 +27,7 @@ gulp.task("style", function() {
       autoprefixer(),
       require("postcss-object-fit-images")
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
@@ -113,7 +114,6 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "js",
-    "images",
     "webp",
     "sprite",
     "html",
