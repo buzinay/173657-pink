@@ -19,11 +19,13 @@
     right: 6.25%;
 
     display: block;
-    width: 100px;
-    padding: 12px 20px;
+    width: 120px;
+    height: 26px;
+    padding: 6px 10px;
 
     font-size: 12px;
-    line-height: 12px;
+    line-height: 24px;
+    font-weight: 700;
     text-transform: uppercase;
     color: @white;
     text-align: center;
@@ -34,7 +36,7 @@
 }
 
 .user-foto__caption {
-  padding: 20px 16px;
+  padding: 18px 16px;
 
   font-size: 14px;
   line-height: 24px;
@@ -59,7 +61,7 @@
 
 .user-foto__message {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .user-foto__time {
@@ -80,7 +82,7 @@
 
     &--panoramic {
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
   }
 
@@ -90,6 +92,7 @@
 
   .user-foto--panoramic::before {
     top: 57px;
+    right: 2%;
   }
 
   .user-foto--panoramic .user-foto__image {
@@ -119,6 +122,11 @@
     padding: 25px 28px 16px;
   }
 
+  .user-foto--panoramic::before {
+    top: 55px;
+    right: 1%;
+  }
+
   .user-foto__like {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -146,8 +154,20 @@
     height: 508px;
   }
 
+  .user-foto__like {
+    align-items: center;
+  }
+
+  .user-foto__caption {
+    min-height: 106px;
+
+    padding: 24px 28px;
+  }
+
   .user-foto__caption--panoramic {
+    min-height: 50px;
     width: 940px;
+    padding: 22px 28px 20px;
   }
 
   .user-foto__message {

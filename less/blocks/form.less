@@ -6,9 +6,13 @@
   position: relative;
 
   margin: 0;
-  padding: 35px 25px 23px;
+  padding: 35px 20px 23px;
 
   border: 0;
+}
+
+.form__fieldset--user-contacts {
+  padding-top: 32px;
 }
 
 .form__fieldset--check-group,
@@ -17,13 +21,13 @@
 }
 
 .form__fieldset--check-group {
-  padding-top: 118px;
+  padding-top: 114px;
   padding-bottom: 0;
 }
 
 .form__fieldset--radio-group {
-  padding-top: 114px;
-  padding-bottom: 45px;
+  padding-top: 110px;
+  padding-bottom: 40px;
 }
 
 .form__checkbox,
@@ -54,7 +58,7 @@
     width: 36px;
     height: 36px;
 
-    margin-right: 15px;
+    margin-right: 30px;
 
     background-color: @white;
     border: 2px solid @table-grey;
@@ -101,7 +105,7 @@
 }
 
 .form__fieldset--message {
-  padding-top: 74px;
+  padding-top: 72px;
   padding-bottom: 16px;
 }
 
@@ -114,11 +118,11 @@
 }
 
 .form__fieldset--check-group .form__row {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .form__fieldset--radio-group .form__row {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 }
 
 .form__fieldset--radio-group .form__row:last-child {
@@ -157,7 +161,7 @@
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 17px;
+  padding: 14px 20px;
 
   font-size: 18px;
   line-height: 30px;
@@ -232,8 +236,8 @@
     box-sizing: border-box;
     width: 100%;
 
-    margin-bottom: 58px;
-    padding: 60px;
+    margin-bottom: 57px;
+    padding: 60px 58px;
 
     border: 2px solid @table-grey;
   }
@@ -256,7 +260,6 @@
 
   .form__fieldset--check-group .form__row {
     flex: 1 1 auto;
-    margin-bottom: 50px;
   }
 
   .form__fieldset--user-info {
@@ -270,12 +273,17 @@
 
   .form__fieldset--user-contacts {
     order: 3;
-    padding-top: 48px;
+    padding-top: 37px;
     padding-bottom: 0;
   }
 
   .form__fieldset--user-contacts .form__legend {
     display: block;
+    width: 200px;
+  }
+
+  .form__fieldset--check-group .form__legend {
+    width: 390px;
   }
 
   .form__fieldset--user-info .form__row {
@@ -293,20 +301,34 @@
     padding-left: 18px;
   }
 
+  .form__checkbox + .form__label,
+  .form__radio + .form__label {
+    &::before {
+      margin-right: 18px;
+    }
+  }
+
   .form__fieldset--radio-group {
     order: 2;
+    padding-top: 40px;
+    padding-bottom: 55px;
   }
 
   .form__fieldset--check-group {
     order: 4;
-    padding-bottom: 0;
+    padding-top: 42px;
+    padding-bottom: 5px;
   }
 
   .form__fieldset--message {
     order: 5;
     margin-bottom: 70px;
-    padding-top: 50px;
+    padding-top: 38px;
     padding-bottom: 50px;
+  }
+
+  .form__fieldset--message .form__legend{
+    width: 200px;
   }
 
   .form__textarea {
@@ -325,9 +347,9 @@
 
   .form__legend {
     position: static;
-    width: auto;
+    width: 320px;
+    margin: 0 auto;
 
-    margin-bottom: -14px;
     padding: 0 30px;
 
     transform: none;
@@ -345,13 +367,13 @@
   }
 
   .form__fieldset--user-info .form__label {
-    margin-right: 20px;
+    margin-right: 18px;
     margin-bottom: 0;
     padding-left: 0;
   }
 
   .form__fieldset--user-contacts .form__label {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
 
   .form__button {
@@ -414,16 +436,18 @@
   }
 
   .form__fieldset--user-info .form__row {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .form__fieldset--radio-group {
     width: 435px;
-    padding: 65px 25px 58px 25px;
+    padding: 44px 25px 58px 25px;
+    margin-bottom: 52px;
   }
 
   .form__fieldset--user-contacts {
     margin-bottom: 56px;
+    padding-top: 34px;
     padding-bottom: 12px;
   }
 
@@ -441,7 +465,7 @@
   }
 
   .form__fieldset--check-group {
-    padding-top: 64px;
+    padding-top: 43px;
     padding-bottom: 6px;
   }
 
@@ -477,12 +501,12 @@
 
   .form__textarea {
     min-height: 127px;
-    padding-top: 17px;
+    padding-top: 13px;
   }
 
   .form__fieldset--message {
     margin-bottom: 65px;
-    padding-top: 48px;
+    padding-top: 34px;
     padding-bottom: 45px;
   }
 
