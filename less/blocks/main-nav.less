@@ -1,17 +1,43 @@
-.main-nav {
-  /*margin-bottom: -68px;*/
-  /*padding-top: 68px;*/
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
 
-  background-color: @base-text-color;
+  padding: 20px 20px 22px;
+}
+
+.main-nav__svg {
+  fill: @white;
+}
+
+.main-nav__svg--tablet,
+.main-nav__svg--desktop {
+  display: none;
+}
+
+.main-nav__logo:hover[href] .main-nav__svg,
+.main-nav__logo:focus[href] .main-nav__svg {
+  fill: @text-red;
+}
+
+.main-nav__logo:active[href] .main-nav__svg {
+  fill: @white;
+  opacity: 0.3;
+}
+
+.main-nav__logo {
+  display: block;
+  width: 75px;
+  height: 23px;
+
+  font-size: 0;
+  line-height: 0;
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 22px;
-  right: 20px;
-  z-index: 200;
+  position: relative;
 
-  display: block;
   width: 50px;
   height: 24px;
 
@@ -21,7 +47,7 @@
   border: none;
 }
 
-.main-nav--closed {
+.main-nav--closed .main-nav__logo-wrapper {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -50,16 +76,16 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 8px;
-    right: -5px;
+    top: 9px;
+    right: 0;
 
     width: 30px;
     height: 5px;
@@ -90,14 +116,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav {
-    /*margin-bottom: -108px;*/
-    /*padding-top: 108px;*/
+  .main-nav__logo-wrapper {
+    padding: 27px 20px;
   }
 
-  .main-nav__toggle {
-    position: absolute;
-    top: 45px;
+  .main-nav__logo {
+    width: 147px;
+    height: 54px;
+  }
+
+  .main-nav__svg--mobile {
+    display: none;
+  }
+
+  .main-nav__svg--tablet {
+    display: block;
   }
 }
 
@@ -117,7 +150,38 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    margin-bottom: 0;
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 940px;
+    margin: 0 auto;
     background-color: transparent;
+  }
+
+  .main-nav__logo-wrapper {
+    min-height: 41px;
+    padding: 0;
+  }
+
+  .main-nav__svg--tablet {
+    display: none;
+  }
+
+  .main-nav__svg--desktop {
+    display: block;
+  }
+
+  .main-nav__logo {
+    padding: 0;
   }
 
   .main-nav__toggle {
