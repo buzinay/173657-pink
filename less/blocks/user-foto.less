@@ -8,20 +8,35 @@
   height: 136px;
 }
 
-.user-foto--panoramic {
+.user-foto__caption {
+  padding: 18px 16px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: @bg-grey;
+}
+
+.user-foto__caption--panoramic {
   position: relative;
+  width: 244px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  background-color: @bg-grey;
 
   &::before {
     content: "Панорама дня";
 
     position: absolute;
-    top: 0;
-    right: 6.25%;
+    top: -136px;
+    right: 0;
 
     display: block;
     width: 120px;
     height: 26px;
-    padding: 6px 10px;
+    padding: 6px 10px 4px;
 
     font-size: 12px;
     line-height: 24px;
@@ -33,24 +48,6 @@
     background-color: @text-red;
     z-index: 200;
   }
-}
-
-.user-foto__caption {
-  padding: 18px 16px;
-
-  font-size: 14px;
-  line-height: 24px;
-
-  background-color: @bg-grey;
-}
-
-.user-foto__caption--panoramic {
-  width: 244px;
-  margin: 0 auto;
-  padding-left: 18px;
-  padding-right: 18px;
-
-  background-color: @bg-grey;
 }
 
 .user-foto__author {
@@ -120,6 +117,10 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 25px 28px 16px;
+
+    &::before {
+      top: -446px;
+    }
   }
 
   .user-foto__like {
@@ -163,6 +164,10 @@
     min-height: 50px;
     width: 940px;
     padding: 22px 28px 20px;
+
+    &::before {
+      top: -452px;
+    }
   }
 
   .user-foto__message {

@@ -5,32 +5,32 @@ navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
 });
 
 var myMap;
 var myPlacemark;
 ymaps.ready(init);
-  function init () {
-    myMap = new ymaps.Map('map-id', {
-        center: [59.938631,30.323055],
-        zoom: 15,
-        controls: ["zoomControl", "fullscreenControl"]
+function init () {
+  myMap = new ymaps.Map('map-id', {
+    center: [59.938631,30.323055],
+    zoom: 15,
+    controls: ["zoomControl", "fullscreenControl"]
   });
 
-    myPlacemark = new ymaps.Placemark([59.938631, 30.323055],{
-      balloonContentBody: '',
-    },{
-            iconLayout: 'default#image',
-            iconImageHref: 'img/icon-map-marker.svg',
-            iconImageSize: [36, 36],
-            iconImageOffset: [-18, -18]
-          });
+  myPlacemark = new ymaps.Placemark([59.938631, 30.323055],{
+    balloonContentBody: '',
+  },{
+      iconLayout: 'default#image',
+      iconImageHref: 'img/icon-map-marker.svg',
+      iconImageSize: [36, 36],
+      iconImageOffset: [-18, -18]
+    });
 
-      myMap.geoObjects.add(myPlacemark);
+    myMap.geoObjects.add(myPlacemark);
 }
