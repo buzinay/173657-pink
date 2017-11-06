@@ -37,13 +37,13 @@ gulp.task("style", function() {
 //--Минифицируем изображения--
 
 gulp.task("images", function () {
-  return gulp.src("build/img/**/*.{png,jpg,svg}")
+  return gulp.src("img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
  ]))
- .pipe(gulp.dest("build/img"));
+ .pipe(gulp.dest("img"));
 });
 
 //--Webp--
@@ -51,7 +51,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("img"));
 });
 
 //--собираем спрайт--
